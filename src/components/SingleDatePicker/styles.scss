@@ -1,0 +1,57 @@
+@import '~src/styles/constants';
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 8px;
+  font-weight: normal !important;
+}
+
+.inputs {
+  display: flex;
+  .trigger {
+    width: 100%;
+    max-width: 100%;
+    // & > div:first-child {
+    //   margin-right: 10px;
+    // }
+    &.errorField {
+      input {
+        border: 1px solid $danger !important;
+      }
+    }
+  }
+}
+
+.monthContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .monthText {
+    margin: 0px 10px 0px 0px;
+  }
+
+  .yearBox {
+    width: 80px;
+
+    input {
+      padding: 8px 10px !important;
+    }
+  }
+}
+
+.errorMessage {
+  color: $danger;
+  text-align: center;
+  display: flex !important;
+  align-items: center;
+  font-size: 12px;
+}
+.errorMessageOverlap {
+  position: absolute;
+  bottom: -17px;
+}

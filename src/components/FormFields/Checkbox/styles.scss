@@ -1,0 +1,49 @@
+@import '~src/styles/constants';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkboxContainer {
+  display: flex;
+}
+
+.center {
+  align-items: center;
+}
+
+.checkboxText {
+  margin-left: 10px;
+  font-weight: normal;
+  display: flex;
+}
+
+.primaryCheckbox {
+  color: $content_text1;
+  label {
+    &:after {
+      border-radius: 100% !important;
+    }
+  }
+}
+.secondaryCheckbox {
+  color: $secondary_color;
+}
+
+.simple_checkbox {
+  label {
+    &:after {
+      background-color: $success !important;
+      color: #ffffff !important;
+    }
+  }
+}
+
+.errorMessage {
+  color: $danger;
+  text-align: center;
+  display: flex !important;
+  align-items: center;
+  font-size: 12px;
+}

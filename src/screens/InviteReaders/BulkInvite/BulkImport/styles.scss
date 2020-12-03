@@ -1,0 +1,45 @@
+@import '~src/styles/constants';
+.heading{
+    margin: 20px 0;
+}
+.ledIcon{
+    margin: 20px 0;
+}
+.bottomSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+}
+.outLookButton{
+    background: $white !important;
+    border: 1px solid $navy_blue !important;
+    border-radius: 60px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around;
+    align-items: center;
+    color: $navy_blue;
+    margin: 0 10px !important;
+}
+.macMailButton {
+    background: $white !important;
+    border: 1px solid $cyan2 !important;
+    border-radius: 60px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around;
+    align-items: center;
+    color: $gray;
+    margin: 0 10px !important; 
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 40px 0;
+}

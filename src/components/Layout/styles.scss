@@ -1,0 +1,37 @@
+@import '~src/styles/constants';
+
+.leftBar {
+  background: $primary;
+  z-index: 1000;
+  width: $drawer-width !important;
+  position: fixed !important;
+  height: 100vh;
+}
+.grid {
+  margin: 0 !important;
+  height: 100%;
+}
+
+.mainContent {
+  background: #fbfbfb;
+  padding: 20px 40px 68px ($drawer-width + 40px) !important;
+}
+.mainContentOverflow {
+  height: calc(100vh - 0px);
+  overflow: hidden;
+}
+
+.innerContent {
+  padding: 40px 80px 68px 80px !important;
+  background: #ffffff;
+}
+
+.bottomRow {
+  height: 10px;
+}
+@media (max-width: 767px) {
+  .mainContent {
+    overflow: hidden !important;
+    padding: 0 !important;
+  }
+}

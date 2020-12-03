@@ -1,0 +1,8 @@
+@import '~src/styles/constants';
+.books {
+  max-height: calc(100vh - 200px);
+  overflow: auto;
+}
+.errorField {
+  border: 1px solid $danger !important;
+}

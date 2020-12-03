@@ -1,0 +1,29 @@
+@import '~src/styles/constants';
+
+.heading {
+    margin-bottom: 20px;
+}
+
+.iconStyle {
+    float: left;
+    margin-right: 5px;
+}
+.backHeading{
+    display: flex;
+    padding-top: 30px;
+}
+
+.bottomBar {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 20px;
+}
+
+.saveButton {
+    justify-content: flex-end;
+    align-self: flex-end;
+    display: flex;
+    width: 100%;
+}

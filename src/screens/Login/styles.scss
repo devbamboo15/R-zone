@@ -1,0 +1,1083 @@
+@import '~src/styles/constants';
+
+.selectedPlanForm {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: block;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0px 44px 52px rgba(0, 0, 0, 0.39);
+  .customLogin, .customSignup {
+    margin: 0;
+    float: left;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    label {
+      padding-left: 10px !important;
+    }
+    > div {
+      width: 100% !important;
+      height: 500px !important;
+      margin: 0 !important;
+      max-width: 100%;
+      border-radius: 0;
+      background: transparent;
+      padding-top: 40px;
+      h2, p , form > div {
+        text-align: left !important;
+      }
+      h2 {
+        font-size: 45px;
+      }
+    }
+  }
+  .customLogin {
+    width: 37%;
+    background: white;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: 'or';
+      right: -29px;
+      top: 50%;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: $secondary_color;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+      font-size: 30px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+  .customSignup {
+    width: 63%;
+    background: $primary;
+    h2 {
+      color: white;
+      margin-bottom: 75px !important;
+      margin-top: 25px !important;
+    }
+    p {
+      color: $turquoise;
+      font-size: 25px;
+    }
+    .inputField {
+      width: 400px !important;
+      margin-bottom: 0 !important;
+      height: 80px;
+      label {
+        color: white !important;
+      }
+    }
+    > div {
+      padding-top: 20px;
+    }
+  }
+  &.step2 {
+    width: 600px;
+    height: 550px;
+    .customLogin {
+      display: none;
+    }
+    .customSignup {
+      width: 100%;
+      height: 550px !important;
+      background: white;
+      h2 {
+        color: $content_text4;
+        font-size: 35px;
+        margin-bottom: 35px !important;
+        margin-top: 0 !important;
+      }
+      .inputField {
+        height: 80px;
+        margin-bottom: 10px !important;
+        width: 100% !important;
+        label {
+          color: $secondary_color !important;
+        }
+      }
+      > div {
+        height: 550px !important;
+        h2 {
+          text-align: center !important;
+        }
+      }
+      .buttonGroup {
+        > div {
+          display: flex;
+          justify-content: center;
+          button {
+            margin-top: 20px !important;
+          }
+        }
+      }
+      .registerSkeepOrStep2New {
+        h2 {
+          margin-bottom: 40px !important;
+        }
+        .organizationType {
+          > div {
+            &:last-child {
+              max-height: 200px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.buttonGroupLogin {
+  display: flex !important;
+  justify-content: center;
+  > div {
+    button:first-child {
+      margin-right: 20px !important;
+    }
+  }
+}
+.back {
+  float: left;
+  margin-top: 45px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.registerSkeepOrStep2 {
+  h2 {
+    margin-bottom: 10px !important;
+  }
+  form {
+    margin-top: 0 !important;
+  }
+  .buttonGroup {
+    button:first-child {
+      margin-right: 10px !important;
+    }
+  }
+  &.registerSkeepOrStep2New {
+    .buttonGroup {
+      margin-top: 70px;
+    }
+  }
+  .emailStep2 {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+  }
+}
+.hasPlan {
+  .mixingForm {
+    .planInfo {
+      max-width: 1250px;
+      margin-bottom: 0;
+      border-radius: 30px 30px 0 0;
+      background-image: url('~src/assets/images/plan-year-bg.png') !important;
+      background-size: 100% 100% !important;
+      padding: 30px 0;
+      height: 185px;
+      position: relative;
+      .planInfoGradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100;
+        content: ' ';
+        display: block;
+      }
+      .planInforSection {
+        float: left;
+        color: white;
+        padding: 0 50px;
+        position: relative;
+        line-height: 40px;
+        span {
+          width: 100%;
+          display: block;
+        }
+        &:before {
+          border-right: 1px solid white;
+          content: ' ';
+          width: 1px;
+          height: 145px;
+          display: block;
+          position: absolute;
+          right: 0;
+          top: -10px;
+        }
+        &.first {
+          font-size: 29px;
+          font-weight: bold;
+          width: 38%;
+        }
+        &.second {
+          font-size: 22px;
+          width: auto;
+          float: right;
+          text-align: right;
+          &:before {
+            display: none;
+          }
+          .price, .intro {
+            width: auto;
+            display: flex;
+            font-size: 26px;
+            justify-content: flex-end;
+          }
+          .number, .unit {
+            width: auto;
+            display: inline-block;
+          }
+          > span {
+            &:first-child {
+              font-weight: bold;
+            }
+            &:nth-child(2) {
+              display: flex;
+              justify-content: flex-end;
+            }
+          }
+          .intro {
+            width: auto;
+            padding-top: 5px;
+            font-size: 23px;
+            font-weight: bold;
+          }
+          .price {
+            font-size: 40px;
+            font-weight: bold;
+            margin-left: 15px;
+            .number {
+              font-size: 40px;
+            }
+            .unit {
+              font-size: 23px;
+              margin-left: 5px;
+              position: relative;
+              top: 5px;
+            }
+          }
+          .secondFooter {
+            display: flex;
+            justify-content: space-between;
+            .footerLeft {
+              text-align: left;
+              font-weight: bold;
+              display: flex;
+              flex: 0.8;
+              & + span {
+                // min-width: 230px;
+                display: flex;
+                flex: 1;
+                justify-content: flex-end;
+              }
+            }
+          }
+        }
+        &.third {
+          text-transform: uppercase;
+          width: 0%;
+          display: none !important;
+          span {
+            font-size: 32px;
+            font-weight: bold;
+            &:first-child {
+              font-size: 18px;
+              font-weight: normal;
+            }
+            &:last-child {
+              font-size: 22px;
+              font-weight: bold;
+            }
+          }
+          &:before {
+            display: none;
+          }
+        }
+      }
+      &.School {
+        background-image: url('~src/assets/images/plan-school-bg.png') !important;
+      }
+      &.Summer {
+        background-image: url('~src/assets/images/plan-summer-bg.png') !important;
+        .planInforSection {
+          padding: 0 30px;
+        }
+      }
+      &.Free {
+        background-image: url('~src/assets/images/plan-free-bg.png') !important;
+        .planInforSection {
+          &.second {
+            .secondFooter {
+              .footerLeft {
+                display: none !important;
+                & + span {
+                  justify-content: flex-start !important;
+                }
+              }
+            }
+          }
+          &.third {
+            line-height: 30px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            span {
+              &:first-child {
+                font-size: 16px;
+              }
+              &:last-child {
+                font-size: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.step2 {
+      .planInfo {
+        width: 600px;
+        height: 135px;
+        padding-top: 5px;
+        margin-top: 35px;
+        background-image: url('~src/assets/images/plan-year-small-bg.png') !important;
+        &.School {
+          background-image: url('~src/assets/images/plan-school-small-bg.png') !important;
+        }
+        &.Summer {
+          background-image: url('~src/assets/images/plan-summer-small-bg.png') !important;
+          .planInforSection {
+            &.second {
+              width: 53%;
+              padding-right: 0;
+            }
+            &.third {
+              width: 47%;
+            }
+          }
+        }
+        &.Free {
+          background-image: url('~src/assets/images/plan-free-small-bg.png') !important;
+        }
+      }
+      .planInforSection {
+        &:before {
+          display: none;
+        }
+        &.first {
+          display: none;
+        }
+        &.second {
+          text-align: left;
+          width: 60%;
+          font-size: 16px;
+          line-height: 40px;
+          padding: 0 30px;
+          float: left;
+          > span {
+            &:first-child {
+              font-weight: normal;
+              position: relative;
+              top: 5px;
+            }
+            &:nth-child(2) {
+              justify-content: flex-start;
+            }
+          }
+          .intro {
+            font-size: 28px;
+            font-weight: bold;
+          }
+          .price {
+            display: none;
+            .number {
+              font-size: 40px;
+            }
+          }
+          .footerLeft {
+            display: none !important;
+            & + span {
+              justify-content: flex-start !important;
+            }
+          }
+        }
+        &.third {
+          // display: none;
+          padding-left: 0;
+          padding-right: 0;
+          width: 40%;
+          display: block !important;
+          text-align: right;
+          padding-right: 30px;
+          .priceInner {
+            text-align: right;
+            float: right;
+            display: block;
+            margin-top: 0;
+            .number, .unit {
+              float: none;
+              display: inline-block;
+            }
+            .unit {
+              top: 1px;
+              position: static;
+            }
+          }
+          .number, .unit {
+            float: left;
+            width: auto;
+          }
+          .number {
+            font-size: 38px !important;
+            font-weight: bold !important;
+          }
+          .unit {
+            font-size: 22px;
+            position: relative;
+            top: 6px;
+            left: 5px;
+            text-transform: uppercase;
+          }
+          span {
+            &:last-child {
+              float: left;
+              margin-top: 5px;
+            }
+          }
+          &.notYear {
+            > span:first-child {
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+      .Free {
+        .planInforSection {
+          &.second {
+            width: 70%;
+            .intro {
+              > span {
+                > span {
+                  > span {
+                    display: none !important;
+                  }
+                }
+              }
+            }
+            .price {
+              display: none;
+            }
+          }
+          &.third {
+            width: 30%;
+            line-height: 35px;
+            > span:first-child {
+              margin-top: 5px;
+            }
+            > span:last-child {
+              float: right;
+            }
+          }
+        }
+      }
+    }
+    .emailExistMode {
+      max-width: 1250px !important;
+      margin-top: 0 !important;
+      border-radius: 0 0 30px 30px !important;
+      &.step2 {
+        width: 600px;
+        p {
+          font-size: 1.3rem;
+          text-align: center;
+          padding: 0 60px;
+          color: #818181;
+        }
+      }
+      > form {
+        width: 500px !important;
+        margin: 0 auto !important;
+        margin-top: 40px !important;
+      }
+    }
+    &.paymentSelected {
+      .planInfo {
+        width: 800px;
+        .planInforSection {
+          &.second {
+            width: 67%;
+          }
+          &.third {
+            width: 33%;
+          }
+        }
+      }
+      .selectedPlanForm {
+        width: 800px;
+        height: auto;
+      }
+    }
+  }
+}
+.paymentForm {
+  padding: 15px 50px;
+  background: white;
+  // min-height: 600px;
+  height: auto;
+  position: relative;
+  width: 100%;
+  float: left;
+  h2 {
+    margin-bottom: 5px;
+    margin-top: 15px;
+    .grayTotal {
+      color: rgba(34, 36, 38, 0.2);
+      margin-left: 10px;
+      position: relative;
+      top: 2px;
+    }
+  }
+  .switchPlan {
+    color: $primary;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+    &:hover {
+      opacity: 0.8;
+    }
+    &.right {
+      position: absolute;
+      right: 50px;
+      top: 15px;
+    }
+  }
+  .switchPlanSub {
+    margin-top: 7px;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    &.right {
+      position: absolute;
+      right: 50px;
+    }
+  }
+  .paymentFormHeader {
+    margin-bottom: 15px;
+  }
+  p {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .infoIcon {
+    background: $turquoise;
+    border-color: $turquoise;
+    &:before {
+      color: white;
+    }
+  }
+  .paymentMessageWrapper {
+    width: 100%;
+    float: left;
+    margin: 1rem 0 0 0 !important;
+    & + div {
+      float: left;
+      width: 100%;
+      button {
+        margin: 1rem 0 0 0 !important;
+      }
+    }
+  }
+  .paymentMessage {
+    background: rgba(23, 164, 224, 0.05);
+    padding: 20px !important;
+    border-radius: 20px;
+  }
+  .paymentMessageHeading {
+    color: $turquoise !important;
+    font-weight: bold !important;
+    margin-top: 5px !important;
+    margin-left: 0 !important;
+  }
+  .paymentMessageDes {
+    margin-top: 1rem;
+    font-size: 14px;
+  }
+  .paymentMessageHelper {
+    display: flex;
+    p {
+      font-size: 15px;
+      color: $secondary_color;
+      font-weight: bold;
+      margin: 0;
+      &:first-child {
+        margin-right: 3rem;
+      }
+      span {
+        margin-right: 5px;
+      }
+    }
+    a {
+      color: $secondary_color;
+      margin-right: 15px;
+      font-weight: bold;
+      text-decoration: underline;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+  .currentPlanDes {
+    color: $content_text1;
+    font-weight: bold;
+    margin: 0;
+    line-height: 30px;
+    &:first-child {
+      margin-top: 1rem;
+    }
+  }
+  .backButton {
+    border-color: $danger !important;
+    background: white !important;
+    color: $danger !important;
+    border: 1px solid !important;
+    border-radius: 60px !important;
+    width: 150px;
+    margin-top: 40px !important;
+    margin-bottom: 15px !important;
+  }
+  .continuesToMyAccountButton {
+    margin: 30px 0 15px 0;
+    text-align: right;
+    button {
+      margin-right: 0 !important;
+    }
+  }
+}
+
+.captchaContainer {
+  border: 1px solid transparent;
+  display: table;
+  margin: 35px auto 0;
+  padding: 5px;
+
+  &.errored {
+    border-color: $danger;
+  }
+}
+
+// Responsive
+@media(max-width: 1221px) {
+	.hasPlan {
+    .mixingForm {
+      .planInfo {
+        .planInforSection {
+          &.first {
+            font-size: 25px;
+            padding: 0 20px;
+            padding-left: 40px;
+            span {
+              width: auto;
+            }
+          }
+          &.second {
+            padding: 0 20px;
+          }
+          &.third {
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width: 1170px) {
+	.selectedPlanForm {
+    .customSignup {
+      > div {
+        h2 {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+@media(max-width: 1060px) {
+	.selectedPlanForm {
+    .customSignup {
+      > div {
+        h2 {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+}
+@media(max-width: 830px) {
+	.mixingForm {
+    .planInfo {
+      .first {
+        display: none;
+      }
+      .second {
+        width: 100% !important;
+      }
+    }
+    &.step2 {
+      .planInfo {
+        .second {
+          width: 53% !important;
+        }
+      }
+    }
+  }
+  .selectedPlanForm {
+    height: calc(100vh - 250px);
+    min-height: 560px;
+    .customLogin, .customSignup {
+      height: 100%;
+    }
+  }
+}
+@media(max-width: 742px) {
+  .selectedPlanForm {
+    .customSignup {
+      .inputField {
+        width: 100% !important;
+      }
+    }
+  }
+}
+@media(max-width: 682px) {
+  .hasPlan {
+    .mixingForm {
+      .planInfo {
+        .planInforSection {
+          &.second {
+            text-align: left;
+            font-size: 18px;
+            span {
+              display: inline-block;
+              width: auto;
+              &:nth-child(2) {
+                align-items: center;
+                justify-content: flex-start;
+              }
+            }
+            .intro {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      &.step2 {
+        .planInfo {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .selectedPlanForm {
+    height: auto;
+    min-height: auto;
+    .customLogin, .customSignup {
+      width: 100%;
+      > div {
+        height: auto !important;
+        padding-top: 20px;
+        h2, p , form > div:last-child {
+          text-align: center !important;
+        }
+        h2 {
+          margin-bottom: 15px !important;
+          margin-top: 0 !important;
+        }
+        p {
+          margin-bottom: 0 !important;
+        }
+        form {
+          margin-top: 20px !important;
+        }
+      }
+      button {
+        margin-top: 15px !important;
+        margin-bottom: 10px !important;
+      }
+    }
+    .customLogin {
+      &:before {
+        display: none;
+      }
+    }
+    .customSignup {
+      p {
+        font-size: 22px;
+      }
+      > div {
+        button {
+          margin-top: 0 !important;
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+    &.step2 {
+      width: 100% !important;
+    }
+  }
+  .paymentForm {
+    .paymentMessage {
+      display: none !important;
+    }
+  }
+}
+@media(max-width: 500px) {
+  .hasPlan {
+    .mixingForm {
+      .planInfo {
+        height: auto;
+        padding: 10px 0;
+        border-radius: 9px 9px 0 0;
+        .planInforSection {
+          line-height: 23px;
+          &.second {
+            font-size: 15px;
+            span {
+              &:nth-child(2) {
+                display: block;
+                float: left;
+                > span {
+                  display: block !important;
+                  float: left !important;
+                }
+              }
+            }
+            > span {
+              &:first-child {
+                width: 100%;
+                display: block;
+                font-weight: bold;
+              }
+            }
+            .intro {
+              font-size: 15px;
+              font-weight: normal;
+              margin-right: 5px;
+            }
+            .price {
+              top: 4px;
+              position: relative;
+              margin-left: 0;
+              font-size: 20px;
+              font-weight: normal;
+              .number {
+                font-size: 20px;
+                font-weight: normal;
+              }
+              .unit {
+                font-size: 15px;
+                top: 0;
+                font-weight: normal;
+                margin-right: 5px;
+              }
+            }
+            .secondFooter {
+              display: block;
+              float: left;
+              margin-top: 5px;
+              width: 100%;
+              .footerLeft {
+                display: block !important;
+                float: left;
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+        &.Free {
+          .planInforSection {
+            &.second {
+              .price {
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+      }
+      &.step2 {
+        .planInfo {
+          height: auto;
+          .planInforSection {
+            &.third {
+              display: none !important;
+            }
+            &.second {
+              width: 100% !important;
+              > span {
+                line-height: 23px;
+                &:first-child {
+                  width: 100%;
+                  display: block;
+                  top: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .selectedPlanForm {
+    border-radius: 0 0 9px 9px;
+    .customLogin, .customSignup {
+      > div {
+        padding-bottom: 20px;
+        h2, p , form > div:last-child {
+        }
+        h2 {
+          font-size: 32px;
+        }
+        p {
+          font-size: 16px;
+        }
+        form {
+        }
+      }
+      button {
+      }
+    }
+    .customLogin {
+      p {
+        color: #6E6E6E;
+      }
+      > div {
+        form > div:last-child {
+          margin-top: 20px !important;
+          margin-bottom: 0 !important;
+          button {
+            margin: 0 !important;
+          }
+        }
+      }
+    }
+    .customSignup {
+      p {
+      }
+      > div {
+        form > div:last-child {
+          margin-top: 20px !important;
+        }
+      }
+      .inputField {
+        height: auto;
+      }
+    }
+    &.step2 {
+      height: auto;
+      .customSignup {
+        height: auto !important;
+        > div {
+          height: auto !important;
+        }
+        h2 {
+          font-size: 32px;
+        }
+        form {
+          > label {
+            font-size: 16px;
+            width: 100%;
+            word-break: break-all;
+            white-space: pre-line;
+          }
+        }
+        .inputField {
+          height: auto;
+        }
+        .buttonGroup {
+          > div {
+            button {
+              margin-top: 0 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .paymentForm {
+    padding: 15px 10px;
+    .paymentFormHeader {
+      p {
+        display: none;
+      }
+      h2, span {
+        text-align: center;
+        width: 100%;
+        display: block;
+      }
+      + div {
+        border: 0;
+        padding: 0 0 15px 0;
+      }
+    }
+    .paymentMessageWrapper {
+      + div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button {
+          margin-bottom: 10px !important;
+          margin-top: 0 !important;
+        }
+      }
+    }
+    .continuesToMyAccountButton {
+      margin: 0;
+      > div {
+        text-align: center;
+      }
+    }
+  }
+}
+@media(max-width: 458px) {
+  .selectedPlanForm {
+    &.step2 {
+      .customSignup {
+        .buttonGroup {
+          > div {
+            flex-direction: row-reverse;
+            > div {
+              display: flex;
+              &:first-child {
+                order: 2;
+              }
+              &:last-child {
+                order: 1;
+                margin-bottom: 10px;
+              }
+            }
+            button {
+              width: 180px;
+              
+            }
+          }
+        }
+      }
+    }
+  }
+}

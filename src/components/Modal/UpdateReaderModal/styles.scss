@@ -1,0 +1,64 @@
+@import '~src/styles/constants';
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.alertStyle {
+  background: $primary !important;
+}
+.modalContent {
+  max-height: calc(100vh - 100px);
+  min-height: 600px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 20px;
+}
+.modalTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modalButtons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.bottomButtons {
+  display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  flex-direction: row-reverse;
+  flex: 1;
+  margin: 10px;
+}
+.joinedText {
+  background: transparent !important;
+}
+.tabContent {
+  border: none !important;
+  box-shadow: none !important;
+}
+.bookList {
+  margin: 20px 0 !important;
+  max-height: calc(100vh - 200px);
+  overflow: auto;
+}
+.loadingContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}

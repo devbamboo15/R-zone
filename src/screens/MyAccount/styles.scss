@@ -1,0 +1,17 @@
+@import '~src/styles/constants';
+
+.processPaymentSuccessTooltip {
+  width: 530px !important;
+  max-width: 530px !important;
+  height: 105px;
+  background: white !important;
+  color: $turquoise !important;
+  border-color: $turquoise !important;
+  &:before {
+    box-shadow: -1px -1px 0px 0px $turquoise !important;
+  }
+  > div {
+    font-size: 18px !important;
+    line-height: 27px;
+  }
+}

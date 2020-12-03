@@ -1,0 +1,22 @@
+@import '~src/styles/constants';
+
+.wrapper {
+  width: 650px;
+  height: auto;
+  background: white;
+  color: black;
+  text-align: center;
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  h2 {
+    color: $turquoise;
+    font-weight: 400;
+    font-size: 24px;
+  }
+  p {
+    font-size: 20px;
+  }
+  button {
+    margin: 0 auto !important;
+  }
+}

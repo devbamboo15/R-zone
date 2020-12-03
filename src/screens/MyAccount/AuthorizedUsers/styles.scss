@@ -1,0 +1,18 @@
+.bottomBar {
+    display: flex !important;
+    justify-content: flex-end;
+}
+
+.loadmoreContainer { 
+    display: flex;
+    justify-content: center;
+}
+
+.icon_container {
+    display: flex;
+    justify-content: space-around,
+}
+.buttonDelete {
+    width: 35px;
+    cursor: pointer;
+}

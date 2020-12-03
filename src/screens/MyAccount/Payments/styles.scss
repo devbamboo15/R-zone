@@ -1,0 +1,210 @@
+@import '~src/styles/constants';
+
+.errorMessage {
+  color: $danger;
+  text-align: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.linkToPage {
+  color: $turquoise;
+}
+.formWrapper {
+  min-height: 570px;
+  >  div {
+    > div {
+      min-height: 570px;
+    }
+  }
+}
+.paymentForm {
+  // border: 1px solid transparentize($color: $thistle, $amount: 0.7);
+}
+.braintreeForm {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.paddingBottom20 {
+  padding-bottom: 20px !important;
+}
+.changePlanButton {
+  button {
+    background: white !important;
+    color: $secondary_color !important;
+    border: 2px solid $secondary_color !important;
+  }
+}
+.purchaseButton {
+  cursor: pointer;
+  font-weight: 500 !important;
+  left: 3px !important;
+  line-height: inherit !important;
+  position: relative !important;
+  text-decoration: none !important;
+  text-align: center !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  border-radius: 3px !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  display: inline-block !important;
+  padding: 10px 20px !important;
+  font-size: 0.875rem !important;
+  outline: none !important;
+  background-color: #64d18a !important;
+  border-color: #64d18a !important;
+  color: white !important;
+  transition: all 200ms ease !important;
+  &:hover {
+    background-color: #8bdda8 !important;
+    color: white !important;
+  }
+  &.visibleHidden {
+    visibility: hidden !important;
+  }
+  &:disabled,
+  &[disabled]{
+    background: #767676 !important;
+    border-color: #767676 !important;
+    cursor: default !important;
+  }
+}
+.ChangePlanFormWrapper {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  right: 0;
+  bottom: 0;
+  background: white;
+  z-index: 11;
+}
+
+.paymentFormRow {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  margin-bottom: 15px !important;
+  &.hide {
+    display: none !important;
+  }
+  // border: 1px solid rgba(34, 36, 38, 0.15);
+  // margin-left: 15px;
+}
+
+.paymentMessage {
+  background: transparentize($color: $turquoise, $amount: 0.85);
+  border-radius: 10px;
+  margin: 15px !important;
+  .paymentGuideMessage {
+    margin-bottom: 0 !important;
+  }
+  .paymentMessageHeading {
+    margin-bottom: 0.5rem !important;
+    &.last {
+      margin-bottom: 0 !important;
+    }
+    span {
+      margin-left: 5px;
+    }
+  }
+  &.paymentMessageBottom {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+.warningIcon {
+  color: #ffffff;
+  background: $secondary_color;
+  &.blue {
+    background: $turquoise;
+  }
+}
+.hideLabel {
+  label {
+    visibility: hidden;
+  }
+}
+
+.purchaseOrderMessage {
+  // background: $secondary_color;
+  background: rgba(137, 70, 223, .15);
+  color: black;
+  .purchaseOrderHeading {
+    font-size: 1.25rem !important;
+    color: black !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .purchaseOrderText {
+    color: black !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .purchaseOrderHighlightText {
+    color: $turquoise !important;
+  }
+}
+
+.purchaseOrderColumn {
+  display: flex !important;
+  align-items: flex-end !important;
+  justify-content: flex-start;
+  flex-direction: column !important;
+}
+.currentPlanName {
+  color: $cyan;
+}
+
+// Responsive
+@media (max-width: 1567px) {
+  .flexEnd, .hideLabel {
+    label {
+      height: 38px;
+      align-items: flex-end;
+      display: flex;
+    }
+  }
+  .formWrapper {
+    &.subscriptionDetailForm {
+      min-height: 750px;
+      > div {
+        > div {
+          &.purchaseOrderColumn {
+            position: static !important;
+            .purchaseOrderMessage {
+              position: absolute;
+              bottom: 5px;
+              left: 0;
+              max-width: 785px;
+            }
+          }
+        }
+      }
+      .ChangePlanFormWrapper {
+        bottom: 40px;
+      }
+    }
+  }
+}
+@media (max-width: 1210px) {
+  .formWrapper {
+    &.subscriptionDetailForm {
+      height: 750px;
+      min-height: 400px;
+      overflow: hidden;
+      > div {
+        > div {
+          min-width: 100% !important;
+          .ChangePlanFormWrapper {
+            right: 20px;
+          }
+          &.purchaseOrderColumn {
+            .purchaseOrderMessage {
+              max-width: 100%;
+              width: calc(100% - 80px) !important;
+              margin-left: 40px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

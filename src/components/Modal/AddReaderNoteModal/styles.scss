@@ -1,0 +1,67 @@
+@import '~src/styles/constants';
+
+.modalTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.modalButtons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.modelWhatText {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottomButtonsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.bottomButtons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+.notesList {
+  margin-left: 20px !important;
+}
+.noteTime {
+  color: $turquoise !important;
+  font-weight: 400 !important;
+  margin-bottom: 5px !important;
+}
+.notesContainer {
+  padding-bottom: 20px;
+}
+.deleteAllText {
+  color: $secondary_color;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 135px;
+}
+.textArea {
+  padding: 10px;
+}
+.loadingContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}

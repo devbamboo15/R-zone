@@ -1,0 +1,79 @@
+@import '~src/styles/constants';
+
+.modalTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.modalButtons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.bottomButtonsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.bottomButtons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+.notesContainer {
+  padding-bottom: 20px;
+}
+.editor {
+  border: 2px solid #da93bf;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding: 15px;
+  width: 100%;
+  height: 450px;
+  overflow-y: auto;
+}
+.loadingContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.form {
+  flex: 1;
+  > div {
+    &:nth-child(2) {
+      margin-top: 0 !important;
+    }
+  }
+}
+.divider {
+  margin-top: 20px;
+}
+.linkParticipants {
+  display: flex;
+  max-width: 100%;
+  font-weight: bold;
+  align-items: center;
+  padding-top: 2px;
+  a {
+    margin-left: 10px;
+  }
+}
+.changeBtn {
+  display: inline-block;
+  margin-left: 10px;
+}

@@ -1,0 +1,31 @@
+@import '~src/styles/constants';
+.center{
+    justify-content: center;
+    align-items: center;
+    display: flex !important;
+}
+.RoleTooltip {
+    display: none;
+}
+.RoleInternalReader {
+    position: relative;
+    div  div > div:first-child > div {
+        padding-left: 6px;
+    }
+    .RoleTooltip {
+        display: flex;
+        position: absolute;
+        background: $cyan;
+        top: 50px;
+        left: 16px;
+        width: 12px;
+        height: 12px;
+        font-size: 0;
+        z-index: 111;
+        cursor: default;
+        span {
+            font-size: 11px !important;
+            margin: 0 !important;
+        }
+    }
+}

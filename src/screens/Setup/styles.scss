@@ -1,0 +1,325 @@
+@import '~src/styles/constants';
+
+.setupPage {
+  background-image: url('~src/assets/images/setup-bg.png');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: auto;
+  &.success {
+    background-image: url('~src/assets/images/thanks-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    min-height: 100vh;
+  }
+  section {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  .setupInner {
+    display: block;
+    overflow: auto;
+  }
+  h2 {
+    color: $warning;
+    font-size: 4rem;
+    text-align: center;
+    margin: 50px 0 !important;
+  }
+  .formPanel {
+    margin: 0 auto;
+    width: 680px;
+    min-height: 580px;
+    background: #F7F7F7;
+    border-radius: 6px;
+    padding: 32px;
+    position: relative;
+    margin-bottom: 30px;
+    form {
+      height: 100%;
+      padding-bottom: 50px;
+      position: static;
+    }
+    .resetPasswordPreLoading {
+      position: absolute;
+      display: flex;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      text-align: center;
+      justify-content: center;
+      z-index: 1111;
+      background: white;
+      opacity: 0.3;
+      border-radius: 30px;
+    }
+    .error {
+      color: $danger;
+      font-size: 10px;
+    }
+    .actionButtons {
+      position: absolute;
+      bottom: 20px;
+      // left: 0;
+      right: 20px;
+      // width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .button {
+      font-size: 16px;
+      min-width: 160px;
+      text-align: center;
+      position: relative;
+      justify-content: space-around;
+      height: 44px;
+      padding-left: 37px;
+      background: $info !important;
+      &:hover {
+        background: $info !important;
+      }
+      &:disabled {
+        background: $gray2 !important;
+        &:hover {
+          background: $gray2 !important;
+        }
+        > div {
+          > svg {
+            > circle {
+              fill: $gray2 !important;
+            }
+          }
+        }
+      }
+      > div {
+        position: absolute;
+        left: 11px;
+        top: 7px;
+        > svg {
+          width: 30px;
+          height: 30px;
+          > circle {
+            fill: $info !important;
+          }
+        }
+      }
+    }
+    .doneBtn {
+      background: $success !important;
+      &:hover {
+        background: $success !important;
+      }
+      > div {
+        > svg {
+          > circle {
+            fill: $success !important;
+          }
+        }
+      }
+    }
+    .createBtn {
+      font-size: 14px !important;
+      height: 35px;
+      padding-left: 25px;
+      padding-right: 10px;
+      min-width: 130px;
+      width: 150px;
+      > div {
+        top: 11px;
+        svg {
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+  }
+  .logoutSection {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+  }
+  .logoutSectionBtn {
+    background: transparent !important;
+    border: 2px solid $danger !important;
+    padding: 5px 18px 5px 10px !important;
+    width: 130px;
+    justify-content: center;
+    > div {
+      padding: 2px 0px 1px 2px;
+      border: 2px solid $danger;
+      border-radius: 50%;
+      position: relative;
+      left: -13px;
+      > svg {
+        height: 14px;
+        width: 18px;
+        > path {
+          fill: $danger;
+        }
+      }
+    }
+  }
+}
+.formInner {
+  .step {
+    margin-top: 25px;
+    &:first-child {
+      margin-top: 0;
+    }
+    > div {
+      max-width: 400px;
+    }
+    .createNewForm {
+      max-width: 500px;
+    }
+    > label {
+      color: $secondary_color !important;
+      // font-weight: 500 !important;
+      display: block;
+      margin-bottom: 16px;
+      font-size: 18px;
+      line-height: 26px;
+      &.searchBookLabel {
+        position: relative;
+        display: inline-block;
+      }
+    }
+    i {
+      &:before {
+        font-size: 18px !important;
+      }
+    }
+  }
+  .createNewForm {
+    display: flex;
+    flex-direction: column;
+    > div {
+      display: flex;
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      > div {
+        flex: 1;
+        margin-right: 15px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .reSelect {
+    > div {
+      border-radius: 4px !important;
+      box-shadow: none !important;
+      &:hover {
+        border-color: $primary !important;
+      }
+    }
+  }
+  .select {
+    &:focus {
+      border-color: $primary !important;
+    }
+    > i {
+      & + div {
+        border-color: $primary !important;
+      }
+    }
+  }
+  .yesNoWrapper {
+    label {
+      padding-left: 20px !important;
+    }
+  }
+}
+.selectedLessBook {
+  color: $danger;
+  margin-top: 10px;
+}
+.createNewBook {
+  > div > div {
+    max-width: 400px;
+  }
+  .addBookBtn {
+    margin-top: 10px;
+  }
+}
+.yesNoWrapper {
+  display: flex;
+  > div {
+    margin-right: 50px;
+  }
+}
+.createNewProgram {
+  max-width: 500px !important;
+  > div {
+    display: flex;
+    &:first-child {
+      margin-bottom: 15px;
+    }
+    > div {
+      flex: 1;
+      &:first-child {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+.createNewGroup {
+  > div {
+    display: flex;
+    &:first-child {
+      margin-bottom: 15px;
+    }
+    > div {
+      flex: 1;
+    }
+  }
+}
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.3);
+  max-width: 100% !important;
+}
+
+// Responsive
+@media (max-width: 700px) {
+  .setupPage {
+    .formPanel {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}
+@media (max-width: 465px) {
+  .formInner {
+    .step {
+      .createNewForm {
+        > div {
+          flex-direction: column;
+          margin: 0;
+          > div {
+            margin-bottom: 10px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

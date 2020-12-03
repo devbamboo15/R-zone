@@ -1,0 +1,146 @@
+@import '~src/styles/constants';
+.container{
+    background: $white;
+    box-shadow: 0px 47px 57px rgba(0, 0, 0, 0.03);
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+.title{
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: $turquoise;
+    padding: 10px 20px;
+    display: flex;
+}
+.summer{
+    background: rgba(89, 205, 255, 0.05);
+    border-top: 1px solid rgba(89, 205, 255, 0.3);
+    border-bottom: 1px solid rgba(89, 205, 255, 0.3);
+    padding: 10px 20px;
+    & + div {
+        > div {
+            &:last-child {
+                .groupItems {
+                    &:after{
+                        display: none;
+                    } 
+                }
+            }
+        }
+    }
+}
+.subtitle{
+    color: $secondary_color;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+.topHeader{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.summerLabel{
+    margin-right: 5px;
+}
+.summerDate{
+    color: $gray4
+}
+.topHeaderGroup{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $gray5;
+    margin-bottom: 5px;
+}
+.headerGroup{
+    padding: 10px 20px;
+    // border-bottom: 1px solid $gray2;
+}
+.groupItems{
+    padding: 10px 20px !important;
+    // border-bottom: 1px solid $gray2 !important;
+    background: #fcfcfc;
+    margin-top: 0 !important;
+    padding-top: 1rem !important;
+    position: relative;
+    &:before, &:after {
+        content: ' ';
+        display: block;
+        height: 1px;
+        border-top: 1px solid $gray2;
+        position: absolute;
+        top: 0;
+        left: 10px;
+        right: 10px;
+    }
+    &:after {
+        bottom: 0;
+        top: auto;
+    }
+}
+.groupItems:last-child{
+    border: none;
+}
+.groupItem{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    strong{
+        font-weight: 500
+    }
+    .groupItemRow {
+        display: flex;
+        flex: 1;
+        &:nth-child(2) {
+            justify-content: center;
+        }
+        &:last-child {
+            justify-content: flex-end;
+        }
+    }
+}
+.groupItemStatus{
+    color: $green;
+    margin-left: 5px;
+}
+.groupItemLabel{
+    color: $gray5;
+    margin-left: 5px;
+}
+.groupHeaderLabel{
+    margin-right: 5px;
+}
+.overviewWrapper {
+    width: 100%;
+    max-height: calc(100vh - 415px);
+    overflow-y: auto;
+}
+.LoadingOverview {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 111;
+    background: transparent;
+}
+.listWrapper {
+    width: 100%;
+    margin-bottom: 5px !important;
+    &:last-child {
+        margin-bottom: 0 !important;
+    }
+}
+.number {
+    font-size: 22px;
+    font-weight: bold;
+    color: $turquoise;
+    position: relative;
+    top: 1px;
+}
+.groupName {
+    color: black;
+    font-weight: 500;
+}

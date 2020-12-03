@@ -1,0 +1,130 @@
+@import '~src/styles/constants';
+
+.tableHeader {
+  background-color: rgba($turquoise, 0.08);
+  color: $turquoise;
+  margin-top: 20px !important;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+  border-bottom: 1px solid rgba($turquoise, 0.2);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+  .tableHeaderColumn {
+    padding: 20px !important;
+  }
+}
+
+.row {
+  margin-top: 20px !important;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+  border-bottom: 1px solid rgba($gray6, 0.06);
+
+  &.lessOpacity {
+    opacity: 0.1;
+  }
+
+  .rowColumn {
+    padding: 10px 20px !important;
+    font-weight: 500;
+    .checkboxLabel {
+      font-weight: 500;
+    }
+    &.titleCol {
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      > div {
+        &:first-child {
+          margin-right: 10px;
+        }
+        
+      }
+    }
+  }
+
+  .imageWrapper {
+    display: flex;
+    align-items: center;
+    .imageInner {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .uploadText {
+      font-size: 12px;
+      color: $success;
+      cursor: pointer;
+      margin-left: 1rem;
+      margin-bottom: 0.5rem;
+      &.txtDisabled {
+        color: gray;
+        cursor: default;
+      }
+    }
+
+    .removeText {
+      font-size: 12px;
+      margin-left: 1rem;
+      color: $danger;
+      cursor: pointer;
+      &.txtDisabled {
+        color: gray;
+        cursor: default;
+      }
+    }
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  color: $secondary_color;
+  position: relative;
+  top: -4px;
+
+  .item {
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 16px;
+
+    &.saveIcon {
+      color: $success;
+    }
+
+    &.banIcon {
+      color: $danger;
+    }
+  }
+}
+.avatarLoading {
+  position: absolute;
+  width: 100%;
+  display: flex;
+}
+.awardHeading {
+  display: flex !important;
+  align-items: center;
+  .groupInfo {
+    flex: 1;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+.quantityInput {
+  width: 60px;
+}
+.inputError {
+  position: relative;
+  .inputField {
+    // margin-bottom: 12px;
+    + div {
+      position: absolute;
+      bottom: -17px;
+      left: 0;
+      width: 500px;
+    }
+  }
+}

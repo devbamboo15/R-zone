@@ -1,0 +1,91 @@
+@import '~src/styles/constants';
+.table{
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    border-radius: 0 !important;
+}
+.tableRow{ 
+    height: 80px; 
+    background: transparentize($turquoise, 0.92) !important; 
+}
+.tableHeaderRow{
+    padding-left:15px !important; 
+    background: none !important;
+    font-weight: 400 !important;
+}
+.totalInviteLabel{
+    color: $text !important;
+    font-weight: 500 !important;
+    margin: 0 5px 0 0 !important;
+    text-transform: capitalize !important;
+}
+.totalInviteValue{
+    color: $turquoise !important;
+}
+.actionOption{
+    justify-content: flex-start;
+    display: flex !important;
+    align-items: center;
+    > span{
+        margin-left: 5px;
+    }
+}
+.footerActions{
+    padding: 20px 20px 40px 20px;
+}
+.bottomBar {
+    color: #fff;
+    font-size: 12px;
+    align-items: center;
+    display: flex;
+    margin-top: 5px;
+}
+.bottomBarButtons {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 20px 0;
+}
+.saveButton {
+    justify-content: flex-end;
+    align-self: flex-end;
+    display: flex;
+    width: 100%;
+}
+.RoleTooltip {
+    display: none;
+}
+.RoleInternalReader {
+    position: relative;
+    div  div > div:first-child > div {
+        padding-left: 6px;
+    }
+    .RoleTooltip {
+        display: flex;
+        position: absolute;
+        background: $cyan;
+        top: 24px;
+        left: 14px;
+        width: 12px;
+        height: 12px;
+        font-size: 0;
+        cursor: default;
+        span {
+            font-size: 11px !important;
+            margin: 0 !important;
+        }
+    }
+}
+.selectAllHeading {
+    margin-top: 3px !important;
+    font-size: 13px !important;
+    color: #A380D2 !important;
+    line-height: 22px !important;
+}
+.moreOptionDropdown {
+    left: auto !important;
+    right: 0 !important;
+    margin-top: 2px !important;
+}

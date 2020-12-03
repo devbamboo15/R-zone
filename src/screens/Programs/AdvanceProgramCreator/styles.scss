@@ -1,0 +1,159 @@
+@import '~src/styles/constants';
+
+.modal {
+  border-radius: 10px !important;
+}
+.checkboxSelectAll {
+  span {
+    display: flex;
+    color: rgba(0, 0, 0, 0.87);
+    cursor: pointer;
+  }
+}
+.checkboxWrapper {
+  > div {
+    align-items: center !important;
+  }
+}
+
+.modalContent {
+  display: flex !important;
+  flex-direction: column;
+  min-height: 90vh;
+  padding: 0px !important;
+  border-radius: 10px !important;
+
+  .modalFormContent {
+    display: flex !important;
+    flex-direction: column;
+    min-height: 90vh;
+    padding: 0px !important;
+  }
+}
+
+.header {
+  padding: 15px 25px 5px;
+}
+
+.videoTutorialText {
+  color: $success;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  i {
+    margin-right: 5px;
+  }
+}
+
+.body {
+  flex: 1;
+  padding: 15px 25px 5px;
+
+  .tableHeader {
+    background-color: rgba($turquoise, 0.08);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .selectRow {
+    background-color: rgba($turquoise, 0.08);
+  }
+
+  .groupRows {
+    max-height: calc(100vh - 350px);
+    overflow: auto;
+    min-height: 300px;
+  }
+  .headerTittle {
+    color: $turquoise;
+    font-size: 17px;
+    padding-top: 6px;
+    > div {
+      margin-right: 5px;
+      position: relative;
+      top: 0;
+      > span {
+        > svg {
+          width: 12px !important;
+          height: 12px !important;
+          > path {
+            fill: rgba(23, 164, 224, 0.3) !important;
+          }
+        }
+      }
+    }
+  }
+}
+.fillAllGroup {
+  opacity: 0.5;
+}
+
+.footer {
+  border-top: 1px solid rgba($color: #000000, $alpha: 0.1);
+  padding: 15px 25px;
+
+  .totalGroups {
+    display: flex;
+    align-items: center;
+
+    .totalGroupsLabel {
+      color: $text;
+      font-size: 16px;
+    }
+
+    .totalGroupsNumber {
+      color: $content_text4;
+      font-size: 14px;
+    }
+  }
+  .groupInfo {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    > div {
+      &:first-child {
+        margin-right: 40px !important;
+      }
+    }
+  }
+  .actionButtons {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    > div {
+      &:first-child {
+        margin-right: 25px;
+      }
+    }
+  }
+}
+.bookBankButton {
+  > div {
+    > button {
+      font-weight: normal !important;
+      position: relative !important;
+      padding-left: 45px !important;
+      border-radius: 20px !important;
+      svg {
+        width: 17px !important;
+        height: 17px !important;
+        position: absolute !important;
+        top: 10px !important;
+        left: 20px !important;
+      }
+    }
+  }
+}
+.chooseQuestionsButton {
+  padding-right: 0px !important;
+  > div {
+    > button {
+      font-weight: normal !important;
+      position: relative !important;
+      border-radius: 20px !important;
+    }
+  }
+}

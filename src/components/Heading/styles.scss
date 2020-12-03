@@ -1,0 +1,64 @@
+@import '~src/styles/constants';
+
+.normalHeading {
+  font-weight: normal !important;
+}
+
+.primaryHeading {
+  color: $success !important;
+}
+.primaryHeading1 {
+  color: $green !important;
+}
+
+.mainHeading {
+  color: $primary !important;
+}
+
+.faidHeading {
+  color: $content_text2 !important;
+}
+
+.cyanHeading {
+  color: $cyan !important;
+}
+
+.grayHeading {
+  color: $content_text3 !important;
+}
+.blackHeading {
+  color: $black !important;
+}
+.yellowHeading {
+  color: $warning !important;
+}
+.warningHeading {
+  color: $warning_bold !important;
+}
+.secondaryHeading {
+  color: $secondary_color !important;
+}
+.dangerHeading {
+  color: $danger !important;
+}
+
+.whiteHeading {
+  color: #fff !important;
+}
+.text2 {
+  color: $text2 !important;
+}
+
+.iconButton {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+}
+
+.iconHeading {
+  margin: 0 !important;
+}
+
+.selfIcon {
+  margin-top: 6px;
+}

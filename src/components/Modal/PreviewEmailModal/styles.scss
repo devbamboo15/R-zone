@@ -1,0 +1,55 @@
+@import '~src/styles/constants';
+
+.modalTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.modalButtons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.bottomButtonsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.bottomButtons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+.notesContainer {
+  padding-bottom: 20px;
+}
+.editor {
+  border: 1px dashed #b5277f;
+  padding: 20px;
+  border-radius: 5px;
+  height: 500px;
+  overflow: auto;
+}
+.loadingContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.form {
+  flex: 1;
+}
+.divider {
+  margin-top: 20px;
+}

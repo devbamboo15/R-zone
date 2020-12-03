@@ -1,0 +1,33 @@
+@import '~src/styles/constants';
+.heading {
+    margin-bottom: 20px;
+}
+
+.tableCell {
+    display: flex;
+    align-items: center;
+    height:100%;
+}
+
+.mytabs {
+    color: red !important;
+}
+
+.table_row{  
+    height: 80px;
+    opacity: 0.8; 
+}
+
+.bottomBar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.linkText {
+    color: $content_text1;
+}
+
+.socialImg {
+    height: 20px;
+    margin-right: 10px;
+}

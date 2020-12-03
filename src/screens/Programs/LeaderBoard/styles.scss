@@ -1,0 +1,45 @@
+@import '~src/styles/constants';
+
+.filterArea {
+  margin-bottom: 30px !important;
+
+  .searchField {
+    i {
+      color: $secondary_color;
+    }
+  }
+}
+
+.readerWrapper {
+  display: flex;
+
+  .reader {
+    display: flex;
+    background-color: rgba($secondary_color, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .readerIndex {
+    padding: 10px;
+    background-color: $secondary_color;
+    border-radius: 5px;
+    color: white;
+  }
+
+  .readerName {
+    padding: 10px;
+  }
+  .leaderboardContainer {
+    width: 100%;
+    .leaderboardItem {
+      display: inline-block;
+      width: 25%;
+      padding: 0.5rem;
+      padding-left: 0;
+      &:nth-child(4n) {
+        padding-right: 0;
+      }
+    }
+  }
+}

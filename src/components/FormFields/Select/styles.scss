@@ -1,0 +1,36 @@
+@import '~src/styles/constants';
+
+.column {
+  display: flex;
+  flex-direction: column;
+  &.errorField {
+    > label + div, > div:first-child {
+       border: 1px solid $danger !important;
+    }
+  }
+  &.errorMessageOverlap {
+    position: relative;
+    .errorMessage {
+      position: absolute;
+      bottom: -17px;
+    }
+  }
+}
+
+.label {
+  margin-bottom: 8px;
+  font-weight: normal !important;
+}
+
+.multiselectField {
+  position: relative;
+  top: 8px;
+}
+
+.errorMessage {
+  color: $danger;
+  text-align: center;
+  display: flex !important;
+  align-items: center;
+  font-size: 12px;
+}

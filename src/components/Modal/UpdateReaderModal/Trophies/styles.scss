@@ -1,0 +1,21 @@
+@import '~src/styles/constants';
+.tableContainer {
+  padding: 0 !important;
+}
+.trophiesEmptyContainer {
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  border-radius: 20px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px !important;
+}
+.trophiesEmptyText {
+  margin-top: 20px;
+}
+.bookBankButtons {
+  flex-direction: 'row';
+  display: flex;
+}

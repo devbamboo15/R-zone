@@ -1,0 +1,29 @@
+.wrapper {
+  position: relative;
+  .result {
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    background: white;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    border-radius: 0 0 4px 4px;
+    margin-top: -2px;
+    ul {
+      margin: 0;
+      list-style: none;
+      padding: 0;
+      li {
+        padding: 10px 15px;
+        cursor: pointer;
+        &:hover {
+          background: rgba(0, 0, 0, 0.05);
+        }
+      }
+    }
+  }
+  .inputLoader {
+    position: absolute;
+    right: 20px;
+    top: 19px;
+  }
+}

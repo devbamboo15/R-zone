@@ -1,0 +1,24 @@
+@import './constants';
+
+.Toastify__toast {
+  font-family: 'Poppins', sans-serif;
+  min-height: 50px;
+  border-radius: 5px;
+  padding: 8px 20px;
+}
+
+.Toastify__toast--success {
+  background: $success;
+}
+
+.Toastify__toast--error {
+  background: $danger;
+}
+
+.Toastify__toast--warning {
+  background: $warning;
+}
+
+.Toastify__toast--info {
+  background: $primary;
+}

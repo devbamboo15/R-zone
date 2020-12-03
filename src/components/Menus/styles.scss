@@ -1,0 +1,37 @@
+@import '~src/styles/constants';
+
+.menu_items {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0px 10px 0px 10px;
+}
+
+.menu_item a {
+    color: theme-colors('text');
+}
+
+.menu_item {
+    color: $text !important;
+    margin-bottom: 10px !important;  
+    font-weight: normal !important;
+    padding: 10px 0px 10px 15px!important;
+    display: flex;
+    align-items: center;
+}
+
+.menu_item:hover {
+    color: $turquoise !important;
+}
+
+.menu_item_active {
+    background: $secondary_color;
+    border-radius: 37px;
+    color: #fff !important;
+    font-weight: bold !important;
+}
+
+.menu_text{
+margin-left: 10px;
+}

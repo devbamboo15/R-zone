@@ -1,0 +1,50 @@
+@import '~src/styles/constants';
+
+.modalTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.modalButtons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.bottomButtonsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.bottomButtons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+.notesContainer {
+  padding-bottom: 20px;
+}
+.textArea {
+  padding: 10px;
+}
+.book {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.loadingContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}

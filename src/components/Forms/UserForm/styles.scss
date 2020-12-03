@@ -1,0 +1,44 @@
+@import '~src/styles/constants';
+
+.tableContainer {
+    margin-bottom: 0px !important;
+    border: none !important;
+}
+
+.accordianContainer { 
+    box-shadow: none !important;
+    border-radius: 0px !important;
+}
+
+.rowItem {
+    display: flex;
+    padding-left: 12% !important 
+}
+
+.checkboxContainer {
+    display: flex
+}
+.accordianContent {
+    background: rgba($color: $accordian_color, $alpha: 0.02) !important;
+}
+.permission{
+    padding-left: 1rem !important;
+}
+
+.checkboxPermission {
+    margin-top:10px;
+}
+
+.loadingContainer {
+    background-color: white;
+}
+
+.permissionContent {
+    display: flex !important;
+    flex-direction:column !important;
+    padding-top: 20px !important;
+    padding-bottom:20px !important;  
+}
+.popupContainer {
+    width: 20px;
+}

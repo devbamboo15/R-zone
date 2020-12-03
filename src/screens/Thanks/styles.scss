@@ -1,0 +1,169 @@
+@import '~src/styles/constants';
+
+.successSignUp {
+  background: url('~src/assets/images/thanks-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 60px 20px 0 20px;
+  h1 {
+    font-size: 38px;
+    color: #fff;
+  }
+  .nextStepText {
+    font-size: 22px;
+    line-height: 35px;
+    font-weight: normal;
+    color: #ffc315;
+    max-width: 620px;
+    margin: 0 auto;
+  }
+  .mainImgContainer {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .mainImg {
+    max-width: 470px;
+    width: 100%;
+  }
+  .getStartedBtn {
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .downloadBtn {
+    text-align: center;
+    max-width: 420px;
+    margin: 0 auto;
+    a {
+      display: inline-block;
+      width: 50%;
+      padding: 0 18px;
+    }
+    img {
+      width: 100%;
+      display: inline-block;
+    }
+  }
+  .dashboardButton {
+    margin: 15px auto 0px;
+    margin-top: 40px;
+    padding: 0px 15px 20px;
+    max-width: 420px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    button {
+      box-shadow: 0px 20px 49px rgba(79, 7, 171, 0.45) !important;
+    }
+  }
+  .textMe {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 360px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    button {
+      box-shadow: 0px 20px 49px rgba(79, 7, 171, 0.45) !important;
+    }
+    a {
+      color: white !important;
+    }
+  }
+  .emailPart {
+    margin: 40px auto;
+    margin-bottom: 60px;
+    height: calc(100vh - 450px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h3 {
+      margin-bottom: 20px !important;
+      word-break: break-word;
+    }
+  }
+  .smsPart {
+    margin: 40px auto;
+    max-width: 600px;
+    height: calc(100vh - 520px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &.finished {
+      height: calc(100vh - 450px);
+      margin-bottom: 60px;
+    }
+    h3 {
+      margin-bottom: 20px !important;
+    }
+    button {
+      max-width: 400px !important;
+      margin: 0 auto !important;
+      width: 300px !important;
+      margin-bottom: 70px !important;
+    }
+  }
+  .smsInputLabel {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: white;
+  }
+  .smsInput {
+    margin-bottom: 10px;
+    input {
+      border-radius: 30px !important;
+      padding: 13px 20px !important;
+      max-width: 300px !important;
+      margin: 20px auto 5px auto !important;
+    }
+  }
+}
+.isSentThankBtnGroup {
+  width: 420px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+  button {
+    width: 200px !important;
+    &:first-child {
+      margin-right: 20px !important;
+    }
+  }
+}
+.accessDesktopBtn {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0 16px 0;
+  button {
+    font-size: 18px !important;
+    padding: 7px 15px !important;
+    > div {
+      position: relative;
+      left: -2px;
+      top: 2px;
+      > svg {
+        width: 27px;
+        height: 27px;
+      }
+    }
+  }
+}
+
+@media(max-height: 765px){
+	.successSignUp {
+    .smsPart {
+      height: auto;
+    }
+  }
+}
+@media(max-width: 340px){
+	.successSignUp {
+    .smsPart {
+      button {
+        width: 100% !important;
+      }
+    }
+  }
+}

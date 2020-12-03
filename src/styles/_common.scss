@@ -1,0 +1,280 @@
+@import './constants';
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+#app {
+  height: 100%;
+}
+
+#main_first_loading_container {
+  height: 100vh;
+  width: 100%;
+  background-color: $primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+// color class
+.gray4 {
+  color: $gray4 !important;
+}
+.turquoise {
+  color: $turquoise !important;
+}
+.secondary_color {
+  color: $secondary_color !important;
+}
+.green {
+  color: $green !important;
+}
+.warning {
+  color: $warning !important;
+}
+.danger {
+  color: $danger !important;
+}
+.ui.tiny.progress {
+  .bar {
+    max-width: 100% !important;
+  }
+}
+
+.inline-loader {
+  margin: 0 auto !important;
+  &:before {
+    border: 0.2em solid rgba(0, 0, 0, 0.1) !important;
+  }
+  &:after {
+    border-color: #767676 transparent transparent !important;
+  }
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.ui.fluid.container {
+  height: 100%;
+}
+
+.ui.grid {
+  //height: 100%;
+}
+
+.ui.menu .item {
+  color: $turquoise !important;
+}
+
+.tabContent {
+  border: none !important;
+}
+
+button.ui.disabled.button {
+  background: $content_text1;
+}
+
+.ui.toggle.checkbox input:focus:checked ~ .box:before,
+.ui.toggle.checkbox input:focus:checked ~ label:before,
+.toggle_checkbox.ui.toggle.checkbox input:checked ~ .box:before,
+.ui.toggle.checkbox input:checked ~ label:before {
+  background: $success !important;
+}
+
+.roundBtn {
+  border-radius: 60px !important;
+}
+
+.ui.grid.accordian_grid > .column:not(.row) {
+  padding-bottom: 0px !important;
+}
+
+.ui.selection.dropdown {
+  min-width: 2em !important;
+}
+
+.ui.input.focus > input,
+.ui.input > input:focus {
+  border-color: $primary !important;
+}
+
+.ui.disabled.input,
+.ui.input:not(.disabled) input[disabled] {
+  opacity: 0.8;
+}
+
+.success_fade {
+  background: rgba($color: $success, $alpha: 0.1) !important;
+  color: $success !important;
+}
+
+button[name='snap-connect-login-button'] {
+  background: rgba($color: $success, $alpha: 0.1) !important;
+  width: 88px;
+  height: 30px;
+  margin: 0px;
+}
+
+button[name='snap-connect-login-button'] > span {
+  font-size: 12px;
+  padding: 0px;
+  color: $success !important;
+  font-weight: bold;
+}
+
+#reader-snapchat-login > div > div > button {
+  background: rgba($color: $success, $alpha: 0.1) !important;
+  width: 88px;
+  height: 30px;
+  margin: 0px;
+}
+.ui.modal {
+  border-radius: 20px !important;
+  > .close {
+    color: rgba(108, 108, 108, 0.42);
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+}
+.bottomBar {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  .buttonGroupContainer {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+.accordion {
+  > div:last-child {
+    > form {
+      border: 0 !important;
+    }
+  }
+}
+
+.add-entry-calander {
+  margin-top: 2rem;
+  table.table {
+    thead {
+      &.suicr-dates-range-view-header {
+        i.fitted.icon {
+          color: $turquoise;
+        }
+        tr:first-child {
+          display: none;
+        }
+        tr:last-child {
+          th {
+            background: rgba(72, 0, 165, 0.1);
+            padding: 0.5rem;
+            font-weight: 500;
+            font-size: 12px;
+            color: $primary;
+            border-bottom: 0 !important;
+          }
+        }
+        tr {
+          th {
+            background: transparent;
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        &:first-child {
+          td {
+            border-top: 0;
+          }
+        }
+        td {
+          padding: 11px !important;
+          border-color: #ede6f6;
+          span {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 13px;
+            margin: 0 auto;
+          }
+          &.active {
+            background: rgba(255, 195, 21, 0.2) !important;
+          }
+          .ui.circular.label {
+            background: transparent;
+            // color: white;
+            font-weight: normal;
+            position: relative;
+            &:before {
+              background: url('~src/assets/images/entry-by-day.png') no-repeat;
+              content: ' ';
+              width: 15px;
+              height: 15px;
+              position: absolute;
+              display: block;
+              top: -11px;
+              right: -15px;
+              background-size: 100% 100%;
+            }
+          }
+          &.today {
+            span, .ui.circular.label {
+              color: white !important;
+              background: $turquoise !important;
+              border-radius: 50% !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.blurring.dimmable > .dimmer {
+  background-color: rgba(137, 70, 223, 0.55);
+}
+.ui.checkbox {
+  label {
+    &:before {
+      border: 2px solid #A380D2;
+    }
+    &:hover {
+      &:before {
+        border-color: #A380D2;
+      }
+    }
+  }
+  input {
+    &:focus {
+      ~ label {
+        &:before {
+          border-color: #A380D2;
+        }
+      }
+    }
+    &:checked {
+      ~ label {
+        &:after {
+          border-radius: 0.21428571rem;
+        }
+      }
+    }
+  }
+}
+.selectAllHeading {
+  margin-top: 3px !important;
+  font-size: 13px !important;
+  color: #A380D2 !important;
+  line-height: 22px !important;
+  font-weight: 500 !important;
+}
+.ui.bottom.popup {
+  margin-top: -5px !important;
+}

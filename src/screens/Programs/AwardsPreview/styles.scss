@@ -1,0 +1,33 @@
+@import '~src/styles/constants';
+
+.awardImage {
+  background-color: $primary;
+  border-radius: 10px;
+  padding: 20px;
+}
+.awardModal {
+  margin: auto !important;
+}
+
+.title {
+  color: $primary;
+  font-size: 25px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.desc1 {
+  color: $success;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.desc2 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+}

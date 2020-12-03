@@ -1,0 +1,51 @@
+@import '~src/styles/constants';
+
+.leftbarContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.logoImg {
+  padding: 30px 0px 0px 35px;
+  position: relative;
+  .freePlan {
+    text-transform: uppercase;
+    color: white;
+    margin-top: -2px;
+    font-size: 13px;
+    margin-left: 30px;
+  }
+  .upgradePlan {
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #21BA45;
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.bottomLeftContainer {
+  margin-top: auto;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottomBar {
+  color: #fff;
+  font-size: 12px;
+  align-items: center;
+  display: flex;
+  margin-top: 20px;
+}
+
+.bottomText {
+  color: #fff;
+  margin-left: 10px;
+}

@@ -1,0 +1,41 @@
+@import '~src/styles/constants';
+
+.row {
+  background-color: $whisper;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  .bookName {
+    font-size: 15px;
+    color: $content_text4;
+    margin-bottom: 5px;
+    position: relative;
+    .readCount {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 15px;
+      span {
+        margin-left: 0px !important;
+      }
+    }
+  }
+
+  .bookAuthor {
+    font-size: 12px;
+    color: $content_text1;
+    margin-bottom: 10px;
+  }
+
+  .bookImageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: 'row';
+  }
+}

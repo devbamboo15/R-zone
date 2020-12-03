@@ -1,0 +1,520 @@
+@import '~src/styles/constants';
+
+.pricingTitle {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    height: 70px;
+    margin-left: -3px;
+    margin-top: -3px;
+    margin-right: -3px;
+    background-size: 100% 100%;
+    > div {
+        margin-left: 5px;
+        position: relative;
+        top: 3px;
+        h5 {
+            font-size: 1.5rem !important;
+            span {
+                font-size: 1.25rem;
+                width: 100%;
+                float: left;
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+.plan_primary {
+    // background: $primary;
+    background-image: url('~src/assets/images/plan-school-bg.png') !important;
+    h5 {
+        text-transform: capitalize !important;
+    }
+}
+
+.plan_secondary {
+    // background: $secondary_color;
+    background-image: url('~src/assets/images/plan-summer-bg.png') !important;
+    h5 {
+        text-transform: capitalize !important;
+    }
+}
+
+.plan_red {
+    // background: $danger;
+    background-image: url('~src/assets/images/plan-year-bg.png') !important;
+    h5 {
+        text-transform: capitalize !important;
+    }
+}
+
+.pricingDescription {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 11px;
+    height: 90px;
+    justify-content: space-around;
+    .price {
+        height: 100%;
+        justify-content: center;
+        .pricePerMonth {
+            font-size: 2.5rem;
+        }
+    }
+    .action {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        .priceTotal {
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 16px;
+            display: flex;
+            justify-content: space-between;
+        }
+        > div:last-child {
+            width: 95px;
+            margin-top: 3px;
+            button {
+                width: 100% !important;
+                padding: 8px !important;
+            }
+        }
+    }
+}
+
+.pricingItem {
+    box-shadow: 0px 47px 57px rgba(0, 0, 0, 0.03);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border: 3px solid rgba(72, 0, 165, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .priceInner {
+        display: flex;
+        flex-direction: column;
+        .priceDes {
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: normal;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        .priceContent {
+            span {
+                &:first-child {
+                    float: left;
+                    margin-top: -5px;
+                    margin-right: 5px;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+    // .priceDes {
+        
+    // }
+}
+.planColumn{
+    padding : 0 5px 0 5px !important;
+    &.sub_primary {
+        .pricingItem {
+            border-color: $primary;
+            .priceInner, .priceTotal {
+                color: $primary;
+            }
+            .action {
+                > div {
+                    button {
+                        background: $primary !important;
+                    }
+                }
+            }
+            &:hover {
+                background: $primary;
+                .priceInner, .priceTotal {
+                    color: white;
+                }
+                .action {
+                    > div {
+                        button {
+                            background: $success !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.sub_secondary {
+        .pricingItem {
+            border-color: $secondary_color;
+            .priceInner, .priceTotal {
+                color: $secondary_color;
+            }
+            .action {
+                > div {
+                    button {
+                        background: $secondary_color !important;
+                    }
+                }
+            }
+            &:hover {
+                background: $secondary_color;
+                .priceInner, .priceTotal {
+                    color: white;
+                }
+                .action {
+                    > div {
+                        button {
+                            background: $success !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.sub_red {
+        .pricingItem {
+            border-color: $danger;
+            .priceInner, .priceTotal {
+                color: $danger;
+            }
+            .action {
+                > div {
+                    button {
+                        background: $danger !important;
+                    }
+                }
+            }
+            &:hover {
+                background: $danger;
+                .priceInner, .priceTotal {
+                    color: white;
+                }
+                .action {
+                    > div {
+                        button {
+                            background: $success !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.actived, &.feActived {
+        &.sub_primary {
+            .pricingItem {
+                background: $primary;
+                .priceInner, .priceTotal {
+                    color: white;
+                }
+                .action {
+                    > div {
+                        button {
+                            &:hover {
+                                background: $success !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.sub_secondary {
+            .pricingItem {
+                background: $secondary_color;
+                .priceInner, .priceTotal {
+                    color: white;
+                }
+                .action {
+                    > div {
+                        button {
+                            &:hover {
+                                background: $success !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.sub_red {
+            .pricingItem {
+                background: $danger;
+                .priceInner, .priceTotal {
+                    color: white;
+                }
+                .action {
+                    > div {
+                        button {
+                            &:hover {
+                                background: $success !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .action {
+            padding-top: 5px;
+        }
+        .priceYourPlan {
+            color: white;
+            margin-bottom: 10px !important;
+        }
+    }
+    &.feActived {
+        &.sub_primary, &.sub_secondary, &.sub_red {
+            .pricingItem {
+                .action {
+                    padding-top: 0 !important;
+                    > div {
+                        button {
+                            background: $success !important;
+                            border: 0 !important;
+                            height: 30px;
+                            > div {
+                                margin: 0 auto;
+                                margin-top: -6px;
+                            }
+                            &:hover {
+                                background: $success !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.testButton {
+    background: green !important;
+}
+.planMoreColumn {
+    .planHeader {
+        > div {
+            h2 {
+                font-size: 20px !important;
+                margin-bottom: 10px !important;
+                margin-top: 15px !important;
+            }
+            p {
+                font-weight: normal !important;
+                font-size: 13px !important;
+                margin-bottom: 10px !important;
+                color: hsla(0, 0%, 100%, 0.8) !important;
+                height: 30px !important;
+                overflow: hidden !important;
+            }
+        }
+    }
+    .pricingDescription {
+        height: 60px;
+        text-align: center;
+        > div {
+            h4 {
+                color: #949494 !important;
+                font-size: 18px !important;
+            }
+        }
+    }
+    &.planMonthly {
+        .planHeader {
+            background: url('~src/assets/images/planMonthly-bg.png');
+            background-size: cover;
+        }
+        .pricingItem {
+            border-color: #4800a5;
+        }
+    }
+    &.planSummer {
+        .planHeader {
+            background: url('~src/assets/images/planSummer-bg.png');
+            background-size: cover;
+        }
+        .pricingItem {
+            border-color: #8946df;
+        }
+    }
+    &.planPrepay {
+        .planHeader {
+            background: url('~src/assets/images/planPrepay-bg.png');
+            background-size: 100% 100%;
+        }
+        .pricingItem {
+            border-color: #ff5271;
+        }
+    }
+}
+.buttonGroups {
+    display: flex !important;
+    justify-content: flex-end;
+    padding-right: 0 !important;
+    align-items: center;
+    padding-right: 1rem !important;
+    .cancelSubLink {
+        margin-right: 1rem;
+    }
+    .buttonCancel {
+        margin-right: 1rem;
+        button {
+            height: 44px !important;
+            h4 {
+                color: $danger !important;
+                font-weight: 500 !important;
+            }
+        }
+    }
+    > div {
+        width: 140px;
+        button {
+            width: 100% !important;
+            justify-content: center;
+        }
+    }
+}
+.selectPlanTop {
+    padding-bottom: 0 !important;
+}
+.selectPlanBottom {
+    padding-top: 0 !important;
+    margin-top: -1px !important;
+    .pricingItem {
+        border-radius: 4px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-top: 0;
+        .price {
+            .priceInner {
+                .priceDes {
+                    flex-direction: column;
+                    display: flex;
+                    line-height: 18px;
+                    margin-bottom: 10px;
+                    span {
+                        &:last-child {
+                            text-transform: initial;
+                        }
+                    }
+                }
+            }
+        }
+        .action {
+            padding-top: 10px;
+            > div:last-child {
+                margin-top: 10px;
+            }
+        }
+    }
+    .feActived {
+        &.sub_primary, &.sub_secondary, &.sub_red {
+            .pricingItem {
+                .action {
+                    padding-top: 10px !important;
+                }
+            }
+        }
+    }
+}
+.selectedReaderOfNumbersWrapper {
+    label {
+        margin-left: 15px;
+    }
+}
+.selectPlanLabel {
+    height: 20px;
+    margin-top: -35px;
+    margin-left: 15px;
+    color: $secondary_color;
+}
+.paymentList {
+    margin-top: -30px;
+    min-width: 800px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 325px;
+    .selectPlanTop, .selectPlanBottom {
+        width: 100%;
+        > div {
+            width: 33.3%;
+            float: left;
+        }
+    }
+    .selectPlanTop {
+        height: 185px;
+    }
+    .selectPlanBottom {
+        height: 120px;
+    }
+    & + div {
+        padding-bottom: 80px !important;
+        margin-top: -75px;
+        min-width: 800px;
+    }
+}
+// Responsive
+@media (max-width: 1567px) {
+    .paymentList {
+        & + div {
+            padding-bottom: 0 !important;
+            margin-top: -55px;
+        }
+    }
+}
+@media (max-width: 1210px) {
+    .paymentList {
+        min-width: 100%;
+        & + div {
+          min-width: 100%;
+          width: 100%;
+          padding-right: 5px;
+        }
+        .pricingTitle {
+            h5 {
+                font-size: 1.3rem !important;
+                span {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        .pricingItem {
+            .price {
+                .priceInner {
+                    .priceDes {
+                        font-size: 11.5px;
+                    }
+                    .priceContent {
+                        font-size: 15px;
+                        .pricePerMonth {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+            .action {
+                > div {
+                    &:last-child {
+                        width: 70px;
+                    }
+                }
+                .priceTotal {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

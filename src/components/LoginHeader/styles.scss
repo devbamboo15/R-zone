@@ -1,0 +1,49 @@
+@import '~src/styles/constants';
+
+.flowHeader{
+	background: white;
+	padding: 30px 35px;
+	display: flex;
+	justify-content: space-between;
+	.logo{
+		display: inline-block;
+		img{
+			margin:4px 0;
+			display: inline-block;
+			width: 160px;
+		}
+	}
+	.rightContent{
+		display: flex;
+		align-items: center;
+		a{
+			color: $primary;
+			margin-right: 30px;
+		}
+	}
+}
+
+@media(max-width: 767px){
+	.flowHeader{
+		text-align: center;
+		flex-flow: column;
+		.rightContent {
+			justify-content: center;
+		}
+	}
+}
+@media(max-width: 501px){
+	.flowHeader {
+		.rightContent{
+			display: block;
+			a {
+				width: 100%;
+				display: block;
+				margin: 0 0 10px 0;
+			}
+			> div {
+				display: inline-block;
+			}
+		}
+	}
+}

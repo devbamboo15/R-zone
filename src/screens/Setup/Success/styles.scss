@@ -1,0 +1,147 @@
+@import '~src/styles/constants';
+
+.successWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 100px 20px 50px 20px;
+  align-items: center;
+  h2 {
+    margin-top: 0 !important;
+  }
+  .mainImgContainer {
+    margin-bottom: 30px;
+  }
+  p {
+    color: white;
+    font-size: 18px;
+    line-height: 35px;
+  }
+  .mainButtonSection {
+    margin: 20px 0 30px;
+    display: flex;
+    > div {
+      margin-right: 15px;
+      width: 250px;
+      &:last-child {
+        margin-right: 0;
+      }
+      button {
+        width: 100%;
+        justify-content: center;
+        height: 50px;
+        position: relative;
+        font-size: 19px;
+        > div {
+          position: absolute;
+          left: 10px;
+          top: 10px;
+          svg {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+    .makeAnotherBtn {
+      background: transparent !important;
+      border: 3px solid $info;
+      padding-right: 0;
+      padding-left: 35px;
+      padding-top: 13px;
+      > div {
+        top: 7px;
+        left: 10px;
+        width: 30px;
+        height: 30px;
+        border: 3px solid $info;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2px;
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+    .gotoAccountBtn {
+      padding-left: 35px;
+
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+    }
+    .gotoAccountBtn,
+    .logoutBtn {
+      > div {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 10px;
+        left: 10px;
+        box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.15);
+        border-radius: 50%;
+        background: $success;
+        padding-left: 2px;
+        > svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+  }
+  .downloadSection {
+    margin-top: 50px;
+    p {
+      font-size: 22px;
+      color: white;
+    }
+    .downloadBtn {
+      text-align: center;
+      max-width: 420px;
+      margin: 0 auto;
+      a {
+        display: inline-block;
+        width: 50%;
+        padding: 0 18px;
+      }
+      img {
+        width: 100%;
+        display: inline-block;
+      }
+    }
+  }
+  .logoutSection {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+  }
+  .logoutSectionBtn {
+    background: transparent !important;
+    border: 2px solid $danger !important;
+    padding: 5px 18px 5px 10px !important;
+    width: 130px;
+    justify-content: center;
+    > div {
+      padding: 2px 0px 1px 2px;
+      border: 2px solid $danger;
+      border-radius: 50%;
+      position: relative;
+      left: -13px;
+      > svg {
+        height: 14px;
+        width: 18px;
+        > path {
+          fill: $danger;
+        }
+      }
+    }
+  }
+}

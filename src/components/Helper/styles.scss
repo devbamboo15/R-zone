@@ -1,0 +1,30 @@
+@import '~src/styles/constants';
+
+.helperIcon {
+  background: $danger;
+  width: 17px;
+  height: 17px;
+  display: inline-flex;
+  border-radius: 50%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  span {
+    color: white;
+    display: flex;
+    font-size: 12px;
+    margin-left: 2px;
+    font-weight: normal;
+  }
+  &.noContent {
+    background: transparent;
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  &.hasContent {
+    background: transparent;
+  }
+}

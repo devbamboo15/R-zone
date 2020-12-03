@@ -1,0 +1,71 @@
+@import '~src/styles/constants';
+
+.errorMessage {
+  color: $danger;
+  text-align: center;
+  display: flex !important;
+  align-items: center;
+  font-size: 12px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  &.errorField {
+    input {
+      border: 1px solid $danger !important;
+    }
+  }
+  &.errorMessageOverlap {
+    .errorMessage {
+      position: absolute;
+      bottom: -17px;
+    }
+  }
+  .copyIcon {
+    position: absolute;
+    right: 0px;
+    height: 18px;
+    top: 38px;
+    width: 37px;
+    cursor: pointer;
+    path {
+      fill: gray;
+    }
+  }
+  :global {
+    input[disabled] {
+      background: $disabled !important;
+    }
+  }
+}
+
+.label {
+  margin-bottom: 8px;
+  font-weight: normal !important;
+}
+.labelNote {
+  cursor: pointer;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: $danger;
+  color: white;
+  border-radius: 50%;
+  margin-left: 15px;
+  top: 3px;
+  text-align: center;
+  position: relative;
+  span {
+    position: absolute;
+    top: -1px;
+    left: 5px;
+    font-size: 12px;
+  }
+}
+.copyPopup {
+  &:before {
+    // left: 4px !important;
+  }
+}

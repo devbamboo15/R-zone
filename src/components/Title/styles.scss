@@ -1,0 +1,24 @@
+@import '~src/styles/constants';
+.heading {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.titleContainer {
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.breadcrumb {
+  margin-left: 67px;
+  color: $gray2;
+}
+
+.activecrumb {
+  color: $secondary;
+}

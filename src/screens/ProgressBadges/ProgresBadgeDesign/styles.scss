@@ -1,0 +1,103 @@
+@import '~src/styles/constants';
+.coupons{
+  .badgesShareInner {
+    margin-right: 15px;
+    .badgeShareList {
+      border-radius: 8px;
+      width: 635px;
+      max-height: 774px;
+      height: auto;
+      background-image: url('~src/assets/images/progress-badges/share_background.png');
+      background-size: cover;
+      display: flex;
+      padding: 20px 35px 35px 35px;
+      flex-direction: column;
+      position: relative;
+      &:after {
+        content: ' ';
+        display: block;
+        height: 1px;
+        bottom: 10px;
+        left: 35px;
+        right: 35px;
+        position: absolute;
+        box-shadow: 2px -25px 20px 6px $secondary_color;
+        background: transparent;
+      }
+      .logo {
+        text-align: center;
+        img {
+          width: 165px;
+        }
+      }
+      .heading {
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        background: rgba(137, 70, 223, 0.5);
+        border-radius: 6px;
+        margin: 10px 0 20px 0;
+        h5 {
+          margin: 0 0 5px 0;
+        }
+        h3 {
+          margin: 0;
+        }
+      }
+      ul {
+        height: auto;
+        max-height: 589px;
+        width: 100%;
+        padding: 0;
+        background: white;
+        list-style: none;
+        margin: 0;
+        border-radius: 8px;
+        overflow: auto;
+        li {
+          display: flex;
+          border-bottom: 1px solid #DCDCDC;
+          padding: 10px 15px;
+          position: relative;
+          &:last-child {
+            border: 0;
+          }
+          .icon {
+            display: flex;
+            align-items: center;
+            margin: 0 5px;
+          }
+          .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 8px;
+            font-size: 13px;
+            font-weight: bold;
+            align-items: flex-start;
+            .des {
+              color: $secondary_color;
+            }
+            .total {
+              color: $danger;
+              font-size: 15px;
+            }
+          }
+          .number {
+            position: absolute;
+            right: 0;
+            height: 100%;
+            width: 50px;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: $success;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+@import '~src/styles/constants';
+
+.tableContainerMark {
+  margin-bottom: 0 !important;
+  border-bottom: 0 !important;
+  border-radius: 0.28571429rem 0.28571429rem 0 0 !important;
+  thead {
+    tr {
+      th:nth-child(3), th:nth-child(4), th:nth-child(5), th:nth-child(6), th:nth-child(7) {
+        padding-left: 0 !important;
+      }
+    }
+  }
+}
+.tableContainer {
+  margin-top: 0;
+  max-height: calc(100vh - 375px);
+  overflow-y: auto;
+  table {
+    thead {
+      display: none !important;
+    }
+    &.tableContainer {
+      border-radius: 0 0 0.28571429rem 0.28571429rem;
+      border-top: 0;
+    }
+  }
+}
+.sortTable {
+  thead {
+    tr {
+      th {
+        border-left: 0 !important;
+      }
+    }
+  }
+}
+
+.topbar {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  .checkboxAll {
+    position: relative;
+    top: -2px;
+  }
+}
+
+.rightTop {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+}
+
+.right1 {
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.selectLabel {
+  position: relative;
+  top: 6px;
+  margin-left: 10px;
+}
+
+.bottomBar {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.loadingContainer {
+  height: 80px;
+  background-color: white;
+}
+.labelCount {
+  background: rgba(56, 178, 26, 0.1) !important;
+  color: $green !important;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+.bulkText {
+  margin-left: 5px;
+  cursor: pointer;
+  &.clickable {
+    color: $secondary_color;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+}
+.tableRow {
+  &:hover {
+    background-color: $pattensBlue;
+    cursor: pointer;
+    .buttonEdit {
+      opacity: 1;
+    }
+  }
+}
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 60px;
+}
+.buttonEdit {
+  background: none !important;
+  font-weight: normal !important;
+  padding: 0 !important;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+.popupContainer{
+  width: 20px;
+}

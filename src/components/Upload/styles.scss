@@ -1,0 +1,53 @@
+@import '~src/styles/constants';
+.container{
+    background: rgba(137, 70, 223, 0.04);
+    border: 2px dotted $secondary_color;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.beforeUpload{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.descriptionSupported{
+    color: $brown;
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+.divider{
+    font-weight: 300 !important;
+    min-width: 100px;
+    text-transform: lowercase !important;
+}
+.uploading{
+    margin: 10px 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.loadingButton{
+    margin-top: 10px;
+}
+.fileName{
+    margin: 0 2px;
+    &::after{
+        content: ',';
+        display: inline-block;
+    }
+}
+.fileName:last-child{
+    &::after{
+        content: '';
+        display: inline-block;
+    }
+}

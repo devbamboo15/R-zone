@@ -1,0 +1,62 @@
+@import '~src/styles/constants';
+
+.wrapper {
+  padding: 20px;
+  border-radius: 10px;
+
+  &.infoWrapper {
+    background-color: $light-blue;
+  }
+
+  &.warningWrapper {
+    background-color: $light-orange;
+  }
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+
+  &.infoTitle {
+    color: $turquoise;
+  }
+
+  &.warningTitle {
+    color: $warning;
+  }
+
+  & .titleIcon {
+    padding: 8px;
+    border-radius: 50%;
+    margin-right: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+
+    &.infoTitleIcon {
+      background-color: $turquoise;
+    }
+
+    &.warningTitleIcon {
+      background-color: $warning;
+    }
+
+    i {
+      margin: 0px !important;
+      font-size: 20px !important;
+    }
+  }
+}
+
+.description {
+  color: $content_text1;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}

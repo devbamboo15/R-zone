@@ -1,0 +1,56 @@
+@import '~src/styles/constants';
+
+.table_row{ 
+    height: 80px; 
+    background: transparentize($turquoise, 0.92) !important; 
+}
+
+.table_header_row {
+    color: $turquoise !important;
+    padding-left:15px !important; 
+    background: none !important;
+    font-weight: 500 !important;
+}
+
+.accordian_table {
+    padding-left: 60px !important;
+}
+
+.tableRowReuse {
+    position: relative;
+    .hoverPencilIcon {
+        position: absolute;
+        top: 0;
+        left: -0.5rem;
+        display: none;
+        height: 100%;
+        align-items: center;
+        i {
+            color: $secondary_color;
+            display: flex;
+            align-items: center;
+        }
+    }
+    &:not(.tableRowReuseActive):hover {
+        background: $turquoise_light;
+        box-shadow: transparentize($turquoise_light, 0.04); 
+        &:before {
+            position: absolute;
+            top: 0;
+            left: -30px;
+            width: 60px;
+            background: $turquoise_light;
+            border-radius: 50%;
+            display: block;
+            content: " ";
+            bottom: 0;
+        }
+        .hoverPencilIcon {
+            display: flex;
+        }
+    }
+}
+.buttonDelete {
+    width: 105px;
+    cursor: pointer;
+}

@@ -1,0 +1,32 @@
+@import '~src/styles/constants';
+.bottomButtons {
+  display: flex;
+  justify-content: space - between;
+  align-items: center;
+  flex: 1;
+  margin: 10px;
+}
+.bookBankButtons {
+  flex-direction: 'row';
+  display: flex;
+}
+.bookList {
+  margin: 20px 0 !important;
+  max-height: calc(100vh - 200px);
+  overflow: auto;
+}
+.loadingContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.errorField {
+  border: 1px solid $danger !important;
+}

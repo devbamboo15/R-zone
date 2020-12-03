@@ -1,0 +1,134 @@
+@import '~src/styles/constants';
+
+.button {
+  font-size: 16px;
+}
+
+.iconButton,
+.numberButton {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+}
+
+.round_button {
+  border-radius: 60px !important;
+}
+
+.outlined_button {
+  background-color: #fff !important;
+  border-style: solid !important;
+  border-width: 2px !important;
+  box-shadow: none !important;
+}
+
+.transparent_button {
+  background: none !important;
+  //color: $content_text2 !important;
+  font-weight: normal !important;
+  padding: 0 !important;
+}
+
+.red_text {
+  color: red !important;
+}
+.gray_button {
+  background: $gray4 !important;
+}
+.primary_button {
+  background: $success !important;
+}
+.primary_color_button {
+  background: $primary !important;
+}
+
+.secondary_button {
+  background: $secondary !important;
+}
+
+.secondary_outlined_button {
+  color: $secondary !important;
+  border-color: $secondary !important;
+}
+
+.white_button {
+  background: #fff !important;
+  color: $secondary !important;
+}
+
+.danger_button {
+  background: $danger !important;
+}
+
+.yellow_button {
+  background: $warning !important;
+}
+
+.cyan_button {
+  background: $cyan !important;
+}
+
+.danger_fade {
+  background: rgba($color: $danger, $alpha: 0.1) !important;
+  color: $danger !important;
+}
+
+.success_fade {
+  background: rgba($color: $success, $alpha: 0.1) !important;
+  color: $green !important;
+}
+
+.main_button {
+  background: $secondary_color !important;
+}
+
+.gray_button {
+  background: $text !important;
+}
+.iconContainer {
+  margin-right: 5px;
+}
+
+.numberButton {
+  position: relative;
+  line-height: 16px !important;
+  padding-left: 40px !important;
+}
+.numberContainer {
+  margin-right: 5px;
+  background: #fff;
+  color: $primary;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+  font-size: 13px;
+  vertical-align: bottom;
+  text-align: center;
+  line-height: 16px;
+  display: inline-block;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}
+.weightNormal {
+  font-weight: normal !important;
+}
+.weight500 {
+  font-weight: 500 !important;
+}
+.weight600 {
+  font-weight: 600 !important;
+}
+.weightBold {
+  font-weight: bold !important;
+}
+
+.noColorButton {
+  svg {
+    path {
+      fill: #fff;
+    }
+  }
+}

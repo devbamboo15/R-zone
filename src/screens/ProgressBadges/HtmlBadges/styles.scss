@@ -1,0 +1,322 @@
+@import '~src/styles/constants';
+
+.label {
+  margin-bottom: 8px;
+  font-weight: normal !important;
+  display: block;
+}
+.badgesPreview {
+  margin-top: 15px;
+  display: flex;
+  width: 100%;
+  overflow: auto;
+  padding-bottom: 20px;
+  .badgesInner {
+    .badgeHeader {
+      min-height: 175px;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        padding: 30px 100px 0 100px;
+        font-size: 35px;
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+      }
+      h1 {
+        font-size: 50px;
+        color: white;
+        margin-top: 0;
+        padding-top: 4px;
+        margin-bottom: 0;
+        &.mainHeading {
+          margin-bottom: 15px;
+        }
+        width: 100%;
+        text-align: center;
+      }
+      h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 22px;
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .badgeContent {
+      background-size: cover;
+      height: 270px;
+      background-position: 0px 552px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      h3 {
+        font-size: 25px;
+        margin-bottom: 10px;
+        margin-top: -10px;
+      }
+      h1 {
+        font-size: 50px;
+        color: white;
+        margin-top: 0;
+        padding-top: 4px;
+        margin-bottom: 0;
+        width: 100%;
+        text-align: center;
+        &.mainHeading {
+          margin-bottom: 10px;
+        }
+      }
+      h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 22px;
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .badgeFooter {
+      height: 90px;
+      background-size: cover;
+      background-position: 0 793px;
+    }
+    &.badges450x500 {
+      max-width: 450px;
+      min-width: 450px;
+      .badgeHeader, .badgeContent, .badgeFooter {
+        background-image: url('~src/assets/images/progress-badges/RZ_Badges_small.png');
+      }
+      .badgeContent {
+        background-position: 0 352px;
+      }
+      .badgeFooter {
+        background-position: 0 83px;
+        height: 83px;
+      }
+    }
+    &.badges500x700 {
+      max-width: 500px;
+      min-width: 500px;
+      .badgeHeader, .badgeContent, .badgeFooter {
+        background-image: url('~src/assets/images/progress-badges/RZ_Badges.png');
+      }
+      .badgeHeader {
+        height: 150px;
+      }
+      .badgeContent {
+        height: 395px;
+        background-position: 0 -172px;
+      }
+      .badgeFooter {
+        background-position: 0 -690px;
+      }
+    }
+    &.badges500x780 {
+      max-width: 500px;
+      min-width: 500px;
+      .badgeHeader, .badgeFooter {
+        background-image: url('~src/assets/images/progress-badges/RZ_Badges.png');
+      }
+      .badgeHeader {
+        height: 345px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        h2 {
+          text-align: center;
+          padding-top: 55px;
+          height: 145px;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          display: flex;
+        }
+        h3 {
+          font-size: 25px;
+          text-align: center;
+          width: 100%;
+          margin: 0;
+          margin-bottom: 15px;
+        }
+      }
+      .badgeContent {
+        background-image: url('~src/assets/images/progress-badges/progress_bage_content_background.png');
+        max-height: 100%;
+        height: auto;
+        background-position: initial;
+        background-size: 100%;
+        margin-top: -66px;
+        padding-top: 43px;
+        background-repeat: repeat-y;
+        min-height: 100px;
+        padding-bottom: 42px;
+      }
+      .badgeFooter {
+        background-position: 0 -690px;
+      }
+    }
+  }
+  .badgesLeadershipInner {
+    margin-right: 15px;
+    margin: 120px 25px 0 25px;
+    &:first-child {
+      margin-left: 70px;
+    }
+    .badgeLeadershipList {
+      border-radius: 8px;
+      width: 635px;
+      max-height: 659px;
+      height: auto;
+      background-image: url('~src/assets/images/progress-badges/leadership_badge_background.png');
+      background-size: cover;
+      position: relative;
+      display: flex;
+      padding: 35px;
+      &:after {
+        content: ' ';
+        display: block;
+        height: 1px;
+        bottom: 10px;
+        left: 35px;
+        right: 35px;
+        position: absolute;
+        box-shadow: 2px -25px 20px 6px #01A1DD;
+        background: transparent;
+      }
+      .topImg {
+        background-image: url('~src/assets/images/progress-badges/leadership_top_img.png');
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        background-size: 100% 100%;
+        top: -80px;
+        left: -65px;
+      }
+      ul {
+        height: auto;
+        max-height: 589px;
+        width: 100%;
+        padding: 0;
+        background: white;
+        list-style: none;
+        margin: 0;
+        border-radius: 8px;
+        overflow: auto;
+        li {
+          display: flex;
+          border-bottom: 1px solid #DCDCDC;
+          padding: 10px 15px;
+          position: relative;
+          &:last-child {
+            border: 0;
+          }
+          .icon {
+            display: flex;
+            align-items: center;
+            margin: 0 5px;
+          }
+          .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 8px;
+            font-size: 13px;
+            font-weight: bold;
+            align-items: flex-start;
+            .des {
+              color: $turquoise;
+            }
+            .total {
+              color: $secondary_color;
+              font-size: 15px;
+            }
+          }
+          .number {
+            position: absolute;
+            right: 0;
+            height: 100%;
+            width: 50px;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: $success;
+          }
+        }
+      }
+    }
+  }
+  &.leadership {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .badgesLeadershipInner {
+      margin: 0 !important;
+      // .badgeLeadershipList {
+      //   &:after {
+      //     width: 0;
+      //     height: 0;
+      //     border-left: 31px solid transparent;
+      //     border-right: 31px solid transparent;
+      //     border-top: 33px solid #01A1DD;
+      //     border-bottom-right-radius: 30px;
+      //     left: calc(50% - 31px);
+      //     position: absolute;
+      //     bottom: -33px;
+      //     display: block;
+      //     content: ' ';
+      //   }
+      // }
+    }
+    > div {
+      &:first-child {
+        width: 635px !important;
+        background: none !important;
+        padding: 0 !important;
+        margin-top: 80px !important;
+      }
+      &:last-child {
+        width: 635px !important;
+        margin-top: 20px !important;
+      }
+      &.notBadge {
+        margin-top: 80px !important;
+      }
+      &.normalMargin {
+        margin-top: 20px !important;
+      }
+    }
+  }
+  &.progressBadge {
+    margin-top: 40px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    > div {
+      &:nth-child(2) {
+        width: 635px;
+      }
+    }
+  }
+  .couponWrapper > div {
+    background: none !important;
+  }
+}
+.multipleSelect {
+  > div {
+    border-radius: 0.28rem;
+    > div {
+      &:first-child {
+        > div {
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}

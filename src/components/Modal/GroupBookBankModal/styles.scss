@@ -1,0 +1,49 @@
+@import '~src/styles/constants';
+
+.books {
+  max-height: calc(100vh - 200px);
+  overflow: auto;
+}
+
+.addBookButton {
+  border: 1px dashed $primary;
+  color: $primary;
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.row {
+  background-color: $whisper;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  .bookName {
+    font-size: 15px;
+    color: $content_text4;
+    margin-bottom: 5px;
+  }
+
+  .bookAuthor {
+    font-size: 12px;
+    color: $content_text1;
+    margin-bottom: 10px;
+  }
+
+  .bookImageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bookImage {
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+}

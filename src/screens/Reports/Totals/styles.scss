@@ -1,0 +1,61 @@
+@import '~src/styles/constants';
+.container{
+    background: $white;
+    box-shadow: 0px 47px 57px rgba(0, 0, 0, 0.03);
+    border-radius: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
+.topHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.title{
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: $turquoise;
+}
+.filterDropdown{
+    display: flex;
+    flex: 1 0 auto;
+    margin-left: 10px;
+    >div:first-of-type{
+        width: 100%
+    }
+}
+.totalItem{
+    margin-bottom: 30px !important;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.bookTotal{
+    color: $primary !important;
+}
+.chaptersTotal{
+    color: $turquoise !important;
+}
+.pagesTotal{
+    color: $warning !important;
+}
+.minutesTotal{
+    color: $danger !important;
+}
+.entriesTotal{
+    color: $secondary_color !important;
+}
+.totalValue{
+    font-size: 40px;
+    font-weight: bold;
+}
+.totalLabel{
+    font-weight: 400 !important;
+    color: $content_text1 !important;
+}
+.listTotals{
+    padding: 0 20px !important;
+    max-height: calc(100vh - 430px);
+    overflow-y: auto;
+}

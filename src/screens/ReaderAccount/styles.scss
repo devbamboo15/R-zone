@@ -1,0 +1,1135 @@
+@import '~src/styles/constants';
+.stats {
+  background: rgba($color: $text, $alpha: 0.1);
+  padding: 1.5rem !important;
+  border-radius: 20px;
+  width: auto !important;
+  .mainStats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .metricItem {
+      margin: 0 0 0 3rem;
+    }
+  }
+}
+.statsContainer{
+  display: flex !important;
+  flex: 1;
+  width: 33% !important;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.topProgramCode {
+  width: 220px !important;
+  margin-top: 55px;
+}
+@media (max-width: 1367px) {
+  .statsContainer{
+    width: auto !important;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .moreItem{
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+}
+
+.error {
+  color: $danger;
+  margin-top: 0.5rem;
+}
+.fullWidth {
+  width: 100%;
+}
+.maxWidth80 {
+  max-width: 80px;
+}
+.maxWidth100 {
+  max-width: 100px;
+}
+.maxWidth300 {
+  max-width: 300px;
+}
+.inlineBlock {
+  display: inline-block !important;
+}
+.marginRight1 {
+  margin-right: 1rem !important;
+}
+
+.statistics {
+  align-items: center !important;
+}
+
+.select {
+  min-width: 8em !important;
+}
+
+.selectHeader {
+  &:focus {
+    border-color: $primary !important;
+  }
+  > i {
+    & + div {
+      border-color: $primary !important;
+    }
+  }
+}
+
+.books {
+  color: $primary !important;
+}
+.chapters {
+  color: $turquoise !important;
+}
+.minutes {
+  color: $danger !important;
+}
+.pages {
+  color: $warning !important;
+}
+.entries {
+  color: $secondary_color !important;
+}
+.flex1 {
+  flex: 1 !important;
+}
+.flex1_5 {
+  flex: 1.5 !important;
+}
+.flex2 {
+  flex: 2 !important;
+}
+.flex3 {
+  flex: 3 !important;
+}
+.flex4 {
+  flex: 4 !important;
+}
+.flex25 {
+  flex: 25 !important;
+}
+.fontWeightNormal {
+  font-weight: normal !important;
+}
+.visibilityHidden {
+  visibility: hidden;
+}
+
+.table_row {
+  cursor: pointer;
+}
+
+.rightText {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  color: $gray;
+  &.rightTextReader {
+    right: 40px;
+  }
+}
+.programTitle {
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+.label {
+  color: $secondary_color;
+  font-weight: normal;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  color: $secondary_color;
+  visibility: hidden;
+  .item {
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 16px;
+
+    &.saveIcon {
+      color: $success;
+      &.disabled {
+        color: $gray4;
+        cursor: default;
+      }
+    }
+
+    &.banIcon {
+      color: $danger;
+    }
+  }
+}
+
+.tableWrapper {
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  position: relative;
+  box-shadow: 0px 47px 57px rgba(0, 0, 0, 0.03);
+}
+.tableContainer {
+  margin-top: 40px;
+  position: relative;
+}
+
+.perText {
+  color: $gray1;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.buttonContainerGroup {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 100%;
+}
+.tableContainer {
+  margin-bottom: 0px !important;
+  border: none !important;
+}
+
+.accoridanReader {
+  display: flex !important;
+  align-items: center;
+}
+
+.deleteReader {
+  justify-content: flex-end;
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+}
+
+.readerFields {
+  display: flex !important;
+  justify-content: space-around;
+}
+
+.last_entry {
+  display: flex;
+}
+.name {
+  height: 100px;
+  width: 100px;
+  background: $warning;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formReaderDetail {
+  margin-top: 5px !important;
+  .buttonGroups {
+    width: 400px;
+    > div {
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.readerDetailWrapper {
+  .profilePicture {
+    position: absolute !important;
+  }
+  .mainContent {
+    padding-left: 140px !important;
+  }
+  .metrics {
+    padding: 20px 30px !important;
+    position: absolute;
+    top: -95px;
+    right: 15px;
+    z-index: 11;
+    left: 15px;
+    .metricItem {
+      margin: 0 !important;
+    }
+    .mainStats {
+      > div {
+        &:last-child {
+          > div > div {
+            min-width: 140px !important;
+          }
+        }
+      }
+    }
+  }
+}
+.buttonGroups {
+  display: flex;
+}
+
+.reader_tab_active {
+  background: $secondary_color !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+}
+
+.simple_tab {
+  background: #fff !important;
+  color: $content_text1 !important;
+  font-weight: normal !important;
+}
+
+.tab_group {
+  border: 1.5px solid $secondary_color;
+}
+
+.book_item {
+  display: flex;
+  margin: 18px 15px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 47px 57px rgba(0, 0, 0, 0.03);
+  &:first-child {
+    margin-top: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.book_item_right {
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  position: relative;
+  .headingWrapper {
+    max-width: 90%;
+    > div {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.right_bar {
+  background: $gray3;
+  //min-height: 504px;
+  padding: 10px;
+  &.bookBankTab {
+    background: #f1f1f1;
+    border-radius: 15px;
+    padding-bottom: 60px;
+    position: relative;
+    margin-top: 25px;
+    .bookBankTabHeading {
+      padding: 20px;
+    }
+    .noBooksMessage {
+      text-align: center;
+      span {
+        &.bookbankEmpty {
+          color: #BBBBBB;
+        }
+      }
+    }
+    .tab_group {
+      width: 100%;
+      padding: 0 20px;
+      margin-bottom: 30px;
+      border: 0;
+      button {
+        border: 1px solid $primary !important;
+        &:first-child {
+          border-right: 0 !important;
+        }
+        &:last-child {
+          border-left: 0 !important;
+        }
+      }
+    }
+    .addBookBtn {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      button {
+        border-radius: 0 0 15px 15px !important;
+        height: 40px;
+        justify-content: center;
+        font-weight: 500;
+        .svgIcon {
+          display: flex;
+          svg {
+            width: 15px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.activityFeed {
+  height: calc(100vh - 410px);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 47px 57px rgba(0, 0, 0, 0.03);
+  background: #ffffff;
+  width: 100%;
+  padding: 10px;
+}
+
+.feedItem {
+  display: flex;
+  margin: 10px 0px;
+  padding: 10px;
+  align-items: center;
+  border-radius: 4px;
+  justify-content: space-around;
+  .feedMessage {
+    margin-right: 1rem;
+    .textArea {
+      outline: none !important;
+    }
+  }
+  &:hover {
+    background: transparentize($color: $secondary_color, $amount: 0.95);
+    .actions {
+      visibility: initial;
+    }
+  }
+  .actions {
+    justify-content: center;
+    .feedIcon {
+      margin-right: 10px;
+    }
+  }
+}
+.activityHeading {
+  &:hover {
+    color: red;
+  }
+}
+.activityTop {
+  display: block;
+  clear: both;
+  width: 100%;
+  margin-bottom: 20px;
+  float: left;
+  .activityTopTitle {
+    width: 100%;
+    margin-bottom: 0.75rem;
+  }
+  .activityTabs {
+    float: right;
+    height: 33px;
+    margin-top: 3px !important;
+    button {
+      padding: 0.5rem !important;
+      border: 1px solid $secondary_color !important;
+      border-right: 0 !important;
+      &:last-child {
+        border-right: 1px solid $secondary_color !important;
+      }
+    }
+  }
+  h4 {
+    margin-top: 1rem !important;
+  }
+  .dateRangeWrapper {
+    width: 270px;
+    float: left;
+  }
+  .programSelect,
+  .groupSelect {
+    width: 230px;
+    float: left;
+    margin-right: 0.5rem;
+  }
+  .actionGroup {
+    width: 100%;
+    display: block;
+    &.hasDatepicker {
+      .programSelect,
+      .groupSelect {
+        width: 135px;
+      }
+    }
+  }
+}
+.activityContent {
+  width: 100%;
+  float: left;
+  overflow: auto;
+}
+
+.activityIcons {
+  display: flex;
+  justify-content: flex-end;
+  visibility: hidden;
+}
+
+.bottomButtons {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.noteModalContainer {
+  padding: 20px;
+  .addEntryDes {
+    position: absolute;
+    top: 13px;
+    svg {
+      width: 20px;
+      height: 20px;
+      position: relative;
+      top: 4px;
+      margin-right: 3px;
+    }
+  }
+  &.loading {
+    table {
+      > tbody {
+        > tr {
+          > td {
+            > div {
+              &:before {
+                display: none !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.noteHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.programCode {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.noteFields {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.noteFieldsContent {
+  margin-top: 0.5rem !important;
+}
+
+.noteDescription {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bottomButtonWrapper {
+  display: flex;
+  align-items: center;
+  div:first-child {
+    margin-right: 10px;
+  }
+  .bookbankButton {
+    div:first-child {
+      top: 6px;
+      left: 6px;
+    }
+  }
+}
+.customColumn {
+  > div {
+    float: left;
+    margin-right: 1rem;
+  }
+  > span {
+    color: $gray;
+    &.selected {
+      color: $turquoise;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  > div + div {
+    position: absolute;
+    top: 20px;
+    margin-left: 30px;
+  }
+  button {
+    float: none;
+    margin-right: 0 !important;
+    display: inline-block !important;
+  }
+}
+
+.accordianContainer {
+  box-shadow: 0px 0px 0px !important;
+}
+
+.rowStyle {
+  min-height: 50px;
+
+  .accordionTitle {
+    padding: 0px !important;
+    border-top: 0px !important;
+
+    .accordionGrid {
+      min-height: 60px;
+      padding-right: 20px !important;
+      padding-left: 20px !important;
+    }
+    .plusIcon {
+      color: $secondary_color;
+      &.plusIcon {
+        margin-right: 30px;
+      }
+    }
+    .accordionTitleLastColumn {
+      display: flex !important;
+      align-items: flex-end !important;
+    }
+  }
+
+  .formAccordion {
+    border-bottom: 1px solid rgba($gray6, 0.2) !important;
+    &.formAccordionReader {
+      padding-left: 10px;
+      &.isActiveAccordion {
+        > div {
+          &:nth-child(2) {
+            padding-left: 30px;
+            padding-right: 33px;
+          }
+        }
+      }
+      .accordionTitle {
+        .smallInput {
+          padding-left: 10px !important;
+        }
+      }
+    }
+  }
+
+  .isActiveAccordion {
+    background-color: rgba($color: $accordian_color, $alpha: 0.02);
+  }
+}
+
+.accordionContent {
+  display: flex;
+  align-items: flex-end;
+  margin: 0px 15px;
+  flex-wrap: wrap;
+
+  .field {
+    margin-right: 5px;
+    &.fieldEnd {
+      margin-right: 0;
+    }
+  }
+  .leftPart {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    flex: 1;
+    &.groupLeftPart {
+      max-width: 810px;
+    }
+  }
+  .rightPart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &.groupRightPart {
+      flex: auto;
+    }
+  }
+  .rightPartButton {
+    font-size: 11px !important;
+    font-weight: normal !important;
+  }
+  .groupbankButton {
+    float: left;
+    margin-right: 10px;
+  }
+}
+
+// Group page
+.groupsPage {
+  .groupPlaceholder {
+    p {
+      padding: 0 65px;
+    }
+  }
+  &.goalBasedProgram {
+    .accordionContent {
+      .groupLeftPart {
+        min-width: 600px;
+      }
+    }
+  }
+}
+
+// Reader page
+.readersPage {
+  .placeholderButtons {
+    display: flex;
+    justify-content: center;
+    > div {
+      margin-right: 15px;
+    }
+  }
+}
+.removeButton {
+  > div {
+    > div {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .accordionContent {
+    .leftPart {
+      &.groupLeftPart {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.emailProgramCodeInput {
+  margin-bottom: 10px;
+}
+.readerText {
+  color: black;
+}
+.smallInput {
+  padding-right: 2rem !important;
+  padding-left: 0 !important;
+  .firstField {
+    margin-right: 15px;
+  }
+  input {
+    width: 100px !important;
+  }
+}
+
+.entryModal {
+  width: 465px !important;
+  .entryNumberContent {
+    text-align: center;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+    width: 205px;
+    height: 205px;
+    background: #ffffff;
+    border: 1.5px solid #8946df;
+    box-shadow: 0px 25px 37px rgba(137, 70, 223, 0.11);
+    position: absolute;
+    padding: 1rem;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    padding: 1rem;
+    z-index: 1002;
+    .entryNumberClose {
+      position: absolute;
+      right: 2px;
+      top: 4px;
+      font-size: 17px;
+      cursor: pointer;
+      &:hover {
+        color: grey;
+      }
+    }
+
+    .dateRangeValue {
+      color: $green;
+    }
+    .dateRangeTitle {
+      margin: 0.5rem 0;
+    }
+    .entrySubmit {
+      margin: 0 auto;
+      display: inline-block;
+    }
+    .entryInputWrapper {
+      .entryInput {
+        width: 100px !important;
+        margin: 5px auto !important;
+      }
+    }
+  }
+  .addEntryPlaceholder {
+    background: rgba(208, 207, 208, 0.5);
+    border-radius: 57px;
+    width: 300px;
+    height: 45px;
+    position: absolute;
+    top: 250px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      color: #737373;
+      display: flex;
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+}
+.confirmEntryModal {
+  min-width: 550px;
+  min-height: 500px;
+  .confirmEntryContent {
+    border-radius: 40px !important;
+    display: flex !important;
+    height: 100%;
+    .defaultChild {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      text-align: center;
+      .childInner {
+        .confirmHeading {
+          margin-top: 10px;
+          font-size: 36px;
+          font-weight: 500;
+          color: #252525;
+        }
+        .confirmDes {
+          font-size: 17px;
+          color: #6E6E6E;
+          padding: 0 60px;
+          line-height: 20px;
+          margin: 20px 0 50px 0;
+        }
+        .buttonGroup {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 30px;
+          button {
+            height: 44px;
+            width: 140px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.updatePasswordModalContent {
+  .fullWidth {
+    margin-top: 1rem;
+  }
+}
+.readingLogProgress {
+  display: flex;
+  align-items: center;
+  span {
+    font-weight: 500;
+    margin-right: 1rem;
+    font-size: 14px;
+    b {
+      color: black;
+    }
+  }
+  &.readerDetailSection {
+    span {
+      color: $cyan;
+      font-size: 18px;
+      b {
+        color: $cyan;
+      }
+    }
+  }
+}
+// .hoverIcon {
+//   left: 10px !important;
+// }
+
+@media (max-width: 1820px) {
+  .activityTop {
+    .actionGroup {
+      &.hasDatepicker {
+        .activityTabs {
+          float: left;
+          margin-top: 0.75rem !important;
+          clear: both;
+        }
+        .dateRangeWrapper {
+          width: auto;
+          float: left;
+        }
+        .programSelect,
+        .groupSelect {
+          min-width: 140px;
+          float: left;
+          margin-right: 1%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1693px) {
+  .activityTop {
+    .actionGroup {
+      &:not(.hasDatepicker) {
+        .activityTabs {
+          float: left;
+          margin-top: 0.75rem !important;
+          clear: both;
+        }
+        .programSelect,
+        .groupSelect {
+          min-width: 49% !important;
+          float: left;
+          margin-right: 1%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1570px) {
+  .activityTop {
+    .actionGroup {
+      &.hasDatepicker {
+        .dateRangeWrapper {
+          width: 300px;
+          float: left;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1565px) {
+  .programsPage {
+    .rightPart {
+      margin-top: 1rem;
+    }
+  }
+}
+@media (max-width: 1439px) {
+  .groupsPage {
+    &.goalBasedProgram {
+      .accordionContent {
+        .groupRightPart {
+          margin-top: 1rem;
+          padding-right: 15px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1388px) {
+  .activityTop {
+    .actionGroup {
+      .activityTabs {
+        float: left;
+        margin-top: 0.75rem !important;
+        clear: both;
+      }
+      .dateRangeWrapper {
+        margin-top: 0.75rem !important;
+        width: 100% !important;
+        float: left;
+        clear: both;
+        > div > div > div > div {
+          width: 49% !important;
+          margin-right: 1% !important;
+          > div {
+            margin-right: 0;
+          }
+        }
+      }
+      .programSelect,
+      .groupSelect {
+        min-width: 49% !important;
+        float: left;
+        margin-right: 1%;
+      }
+    }
+  }
+}
+@media (max-width: 1300px) {
+  .bookBankTab {
+    .tab_group {
+      button {
+        padding: 0.5rem !important;
+      }
+    }
+  }
+}
+@media (max-width: 1249px) {
+  .groupsPage {
+    .accordionContent {
+      .groupRightPart {
+        margin-top: 1rem;
+        padding-right: 15px;
+      }
+    }
+  }
+}
+@media (max-width: 1168px) {
+  // .activityTop {
+  //   .programSelect,
+  //   .groupSelect {
+  //     width: 49%;
+  //     float: left;
+  //     margin-right: 1%;
+  //   }
+  //   .dateRangeWrapper {
+  //     width: 100%;
+  //     float: left;
+  //     margin-top: 0.75rem;
+  //   }
+  // }
+}
+@media (max-width: 1095px) {
+  .bookBankTab {
+    .tab_group {
+      button {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+// Program page
+.programsPage {
+  .readerText {
+    font-weight: bold;
+  }
+  .rightPart {
+    display: flex;
+    min-width: 554px;
+    height: 60px;
+    justify-content: flex-start;
+  }
+}
+
+// Read Count
+.readCount {
+  position: absolute;
+  right: 30px;
+  top: 0;
+  cursor: default;
+  span {
+    margin-left: 0 !important;
+  }
+}
+
+// Delete book icon
+.deleteBookIcon {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  color: $danger;
+  cursor: pointer;
+}
+
+.tableContainerMark {
+  margin-bottom: 0 !important;
+  border-bottom: 0 !important;
+  border-radius: 0.28571429rem 0.28571429rem 0 0 !important;
+  border-width: 0px !important; 
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.totalHeader {
+  text-align: right !important;
+  padding-right: 60px !important;
+}
+
+.sortTable {
+  thead {
+    tr {
+      th {
+        border-left: 0 !important;
+        &:first-child {
+          padding-left: 40px !important;
+        }
+      }
+    }
+  }
+}
+
+/**
+* Group Table
+*/
+@media (max-width: 1500px) {
+  .groupTable {
+    .accordionGrid {
+      > div {
+        &:first-child {
+          max-width: 200px !important;
+        }
+        &:nth-child(2) {
+          max-width: 50px;
+        }
+        &:nth-child(3) {
+          min-width: 90px;
+        }
+        &:nth-child(4) {
+          max-width: 100px;
+        }
+        &:nth-child(5) {
+          max-width: 35%;
+        }
+        &:nth-child(6) {
+          flex: 1;
+        }
+      }
+    }
+  }
+  .groupTableHeader {
+    tr {
+      th {
+        &:first-child {
+          width: 0 !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1300px) {
+  .groupTableHeader {
+    tr {
+      th {
+        &:first-child {
+          width: 25% !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1150px) {
+  .groupTable {
+    .accordionGrid {
+      > div {
+        &:nth-child(6) {
+          position: absolute !important;
+          right: 0;
+        }
+      }
+    }
+  }
+}

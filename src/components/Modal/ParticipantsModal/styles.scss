@@ -1,0 +1,148 @@
+@import '~src/styles/constants';
+
+.modalContent {
+  max-height: calc(100vh - 150px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-top: 20px;
+  padding-right: 15px;
+}
+.modalTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.modalButtons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.bottomButtons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+.tableContainerMark {
+  margin-bottom: 0 !important;
+  border-bottom: 0 !important;
+  border-radius: 0.28571429rem 0.28571429rem 0 0 !important;
+  thead {
+    tr {
+      th:nth-child(3),
+      th:nth-child(4),
+      th:nth-child(5),
+      th:nth-child(6),
+      th:nth-child(7) {
+        padding-left: 0 !important;
+      }
+    }
+  }
+}
+.tableContainer {
+  max-height: 63vh;
+  overflow: auto;
+  padding: 0 !important;
+  table {
+    thead {
+      display: none !important;
+    }
+    &.tableContainer {
+      border-radius: 0 0 0.28571429rem 0.28571429rem;
+      border-top: 0;
+    }
+  }
+}
+.sortTable {
+  thead {
+    tr {
+      th {
+        border-left: 0 !important;
+      }
+    }
+  }
+}
+
+.topbar {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.rightTop {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+}
+
+.right1 {
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.selectLabel {
+  position: relative;
+  top: 6px;
+  margin-left: 10px;
+}
+
+.bottomBar {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.loadingContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.labelCount {
+  background: rgba(56, 178, 26, 0.1) !important;
+  color: $green !important;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+.bulkText {
+  margin-left: 5px;
+  cursor: pointer;
+  &.clickable {
+    color: #17a4e0;
+    text-decoration: underline;
+  }
+}
+.tableRow {
+  &:hover {
+    background-color: $pattensBlue;
+    cursor: pointer;
+    .buttonEdit {
+      opacity: 1;
+    }
+  }
+}
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //max-width: 60px;
+}
+.buttonEdit {
+  background: none !important;
+  font-weight: normal !important;
+  padding: 0 !important;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}

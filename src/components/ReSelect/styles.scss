@@ -1,0 +1,92 @@
+@import '~src/styles/constants';
+
+.dropdownIcon{
+  margin: 0 5px;
+}
+.filterTransparent{
+  width: 100%;
+  >div:first-of-type {
+    border: none !important;
+    box-shadow: none !important;
+    background-color: rgba(196, 196, 196, 0.1);
+    margin-left: 10px;
+  }
+}
+
+.hide {
+  display: none;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 8px;
+  font-weight: normal !important;
+}
+
+.multiselectField {
+  position: relative;
+  top: 8px;
+}
+
+.errorMessage {
+  color: $danger;
+  text-align: center;
+  display: flex !important;
+  align-items: center;
+  font-size: 12px;
+}
+.optionWithCheckbox {
+  > div {
+    
+  }
+}
+.menuWithCheckbox {
+  > div > div {
+    position: relative;
+    padding: 12px 20px 12px 30px;
+    color: inherit;
+    background: transparent;
+    cursor: pointer;
+    text-align: left;
+    &:hover {
+      background: #DEEBFF;
+    }
+    &:before {
+      background: left;
+      left: 8px;
+      top: 15px;
+      width: 12px;
+      padding: 0;
+      display: block;
+      border: 0.5px solid $primary;
+      background: white;
+      content: "";
+      height: 12px;
+      z-index: 1;
+      position: absolute;
+      border-radius: 2.5px;
+    }
+    &:after {
+      display: none;
+      font-family: 'Icons';
+      content: '\f00c';
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      top: 12px;
+      left: 10px;
+      z-index: 2;
+      color: white;
+      font-size: 9px;
+    }
+  }
+}
+.bookAuthor {
+  color: rgba(0, 0, 0, 0.47);
+}
+.allIsSingleOption {
+  color: red !important;
+}

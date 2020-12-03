@@ -1,0 +1,187 @@
+@import '~src/styles/constants';
+.containerDisplays{
+    justify-content: flex-end;
+    text-align: right
+}
+.displays{
+    display: inline-flex;
+    justify-items: flex-end;
+    align-items: center
+}
+.displayLabel{
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: $turquoise;
+    margin-right: 24px;
+}
+.displayModes{
+    box-shadow: none !important;
+    overflow: hidden;
+    border: none !important;
+}
+.displayItem{
+    border-top: 1.5px solid $thistle !important;
+    border-bottom: 1.5px solid $thistle !important;
+    box-sizing: border-box;
+    background: $white
+}
+.displayItem:first-child{
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+    border-left: 1.5px solid $thistle !important;
+}
+.displayItem:last-child{
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    border-right: 1.5px solid $thistle !important;
+}
+.displayItem.displayItemActive{
+    border-color: $secondary_color !important;
+    background-color: $secondary_color !important;
+    border-left-color: $secondary_color !important;
+}
+.displayItem.displayItemActive label{
+    color: $white !important;
+}
+.filterByLabel{
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: $turquoise;
+    margin-bottom: 10px;
+    display: flex;
+}
+.buttonFilter{
+    background: $secondary_color !important;
+    // border-radius: 10px !important;
+    color: $white !important;
+    text-transform: capitalize;
+    font-weight: normal !important;
+    cursor: pointer;
+    display: flex !important;
+    padding: 10px !important;
+    min-height: 38px !important;
+    float: left;
+}
+.buttonFilterApply {
+    font-weight: normal !important;
+    background: $success !important;
+    height: 38px !important;
+    width: 110px !important;
+}
+.arrowIcon{
+    color: $white;
+    margin-left: 10px;
+}
+.col3{
+    width: 33.3333% !important;
+}
+.col9{
+    width: 66.666667% !important;
+}
+.sectionFilter{
+    border: 1px solid #D0CFD0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.filterDate{
+    border: none !important;
+    box-shadow: none !important;
+    background-color: rgba(196, 196, 196, 0.1);
+    margin-left: 10px;
+    border-radius: 10px;
+    min-height: 38px;
+    align-items: center;
+    display: flex;
+    justify-items: center;
+}
+.filterDateSelect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 160px;
+}
+.inputDate{
+    max-width: 100%;
+    > input{
+        font-size: inherit;
+        border: none !important;
+        padding: 5px !important;
+        background: transparent !important;
+        ::placeholder{
+            color: $content_text1
+        }
+    }
+}
+.filterOr{
+    margin-left: 5px;
+}
+.leftSectionFilter{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.rightSectionFilter{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.childCheckbox{
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 20px;
+    display: flex;
+}
+.childCheckboxAlt{
+  flex-direction: row;
+  justify-content: space-around;
+  display: flex;
+}
+.spacing{
+    width: 10px;
+}
+.mainCheckbox{
+    width: 175px
+}
+.leftLargeSectionFilter{
+    width: 70% !important;
+}
+.leftLargeSectionFilterAlt{
+  width: auto !important;
+}
+.rightSmallSectionFilter{
+    width: 30% !important;
+}
+.content{
+    margin-bottom: 50px !important;
+}
+.customDateWrapper {
+    width: 200px;
+}
+@media screen and (max-width: 1770px){
+	.sectionFilter {
+        .filterDate1 {
+            max-width: 60%;
+        }
+    }
+    .customDateWrapper {
+        width: 150px;
+        .filterDateSelect {
+            justify-content: flex-start;
+            width: 100%;
+            min-width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 1391px){
+    .buttonFilterApply {
+        margin-top: 0.5rem !important;
+    }
+}

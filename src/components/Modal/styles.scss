@@ -1,0 +1,183 @@
+@import '~src/styles/constants';
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.alertStyle {
+  background: $primary !important;
+}
+.noOrgStyle {
+  margin: auto !important;
+  height: 350px;
+  > div {
+    display: flex;
+    height: 100%;
+    border-radius: 2rem !important;
+    .defaultChild {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      font-size: 33px;
+      text-align: center;
+      line-height: 70px;
+    }
+  }
+}
+
+.modalTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.modalButtons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.modelWhatText {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.warningIcon {
+  height: 25px;
+  width: 25px;
+  background: $warning_bold;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.cautionIcon {
+  height: 25px;
+  width: 25px;
+  background: $warning;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.cautionDangerIcon {
+  height: 25px;
+  width: 25px;
+  background: $danger;
+  color: #FFF;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.messageIcon {
+  align-items: center !important;
+}
+
+.messageContainer {
+  padding: 10px !important;
+  margin: 10px !important;
+}
+.messageWarningContainer {
+  background: transparentize($color: $warning_bold, $amount: 0.95);
+}
+.messageCautionContainer {
+  background: transparentize($color: $warning, $amount: 0.95);
+}
+.messageCautionDangerContainer{
+  border-radius: 15px;
+  padding: 10px 25px !important;
+  margin: 10px !important;
+  background: transparentize($color: $danger, $amount: 0.85);
+}
+.readerItems{
+  color: $content_text1;
+  font-weight: 600;
+}
+.count {
+  color: $secondary_color;
+  margin-left: 10px;
+}
+.helpIcon {
+  font-size: 10px;
+}
+.bottomButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.welcomeStyle {
+  margin: auto !important;
+  width: 750px !important;
+}
+.welcomeContentStyle {
+  border-radius: 1.5rem !important;
+  box-shadow: 0px 44px 52px rgba(0, 0, 0, 0.39) !important;
+  .childInner {
+    text-align: center;
+    padding: 40px 0;
+    .newProductImg {
+      width: 100px;
+      height: 100px;
+    }
+    .welcomeHeading {
+      font-size: 35px;
+      color: #67DF54;
+      padding: 0px;
+      width: 500px;
+      margin: 20px auto;
+    }
+    .welcomeDes {
+      font-size: 20px;
+      line-height: 30px;
+      width: 600px;
+      margin: 10px auto;
+    }
+    > div {
+      margin-top: 50px;
+      button {
+        padding: 15px 40px 13px 40px !important;
+        h5 {
+          font-size: 20px !important;
+          font-weight: 500 !important;
+        }
+      }
+    }
+  }
+}
+@media(max-width: 767px) {
+  .welcomeStyle {
+    width: 100% !important;
+    .welcomeContentStyle {
+      .childInner {
+        padding: 20px 0;
+        .welcomeHeading {
+          font-size: 28px;
+          width: 100%;
+        }
+        .welcomeDes {
+          font-size: 16px;
+          line-height: 26px;
+          width: 100%;
+        }
+        > div {
+          margin-top: 25px;
+          button {
+            h5 {
+              font-size: 16px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
